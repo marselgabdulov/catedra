@@ -27,7 +27,6 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.1",
     "react-youtube": "^7.4.0",
     "reactstrap": "^4.8.0",
     "yandex-map-react": "^1.0.0"
@@ -42,6 +41,8 @@
     "html-webpack-plugin": "^2.28.0",
     "img-loader": "^2.0.0",
     "node-sass": "^4.5.3",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.9",
