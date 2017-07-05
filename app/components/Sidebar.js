@@ -4,7 +4,6 @@ import Nav from './nav';
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       status : 'hidden'
     }
@@ -15,12 +14,11 @@ class Sidebar extends React.Component {
     this.setState( {
       status: st
     });
-    console.log(this.state.status);
   }
 
    render() {
      return (
-       <div>
+       <div id="navbar">
          <nav role='navigation' onClick={this.handleClick.bind(this)} className={this.state.status}>
            <Nav/>
             <button className="menu"></button>

@@ -6,6 +6,8 @@ import Contacts from './Contacts';
 import Schedule from './Schedule';
 import Requisites from './Requisites';
 
+
+import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
@@ -13,6 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      <div className="wrapper">
       <BrowserRouter>
         <div>
         <Sidebar/>
@@ -28,6 +31,7 @@ class App extends React.Component {
         <Footer />
         </div>
       </BrowserRouter>
+      </div>
       </div>
     )
   }

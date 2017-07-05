@@ -1,4 +1,82 @@
-nav {
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora',serif;
+  font-size: 1em;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header .title {
+
+  display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%,50%);
+    color: white;
+    font-size: 3.4em;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.schedule {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto auto 2em auto;
+  border: 1px solid #654491;
+  border-color: white;
+}
+
+.schedule th {
+  text-align: left;
+  padding: 0.5em 0.5em;
+  margin-bottom: 2.5em;
+}
+.schedule th h3, h4 {
+  color: #D0021B;
+  border-bottom: 1px solid;
+  padding-left: 50px;
+}
+
+.schedule h3 {
+  font-weight: bold;
+}
+
+.schedule tbody td:first-child {
+  text-align: center;
+}
+.schedule tr td:first-child {
+  font-weight: bold;
+  width: 150px;
+}
+.schedule td {
+  padding: 0.5em;
+}
+.schedule td strong {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#navbar nav {
+  font-family: 'Oswald', sans-serif;
+  z-index: 2;
   position: absolute;
   width: 400px;
   left: 0;
@@ -6,90 +84,98 @@ nav {
   bottom: 0;
   background-color: #f2f2f2;
   transform: translate(-400px, 0);
-  transition: transform 0.35s linear;
+  transition: transform 0.2s linear;
 }
-nav.active {
+
+#navbar nav.active {
   transform: translate(0, 0);
 }
 
-button {
-  position: absolute;
+#navbar button {
+  position: fixed;
   top: 0;
   right: 0;
   border: 0;
   width: 50px;
   height: 50px;
   background: transparent;
-
   transform: translate(50px, 0);
-  transition: transform 0.125s linear 0.275s;
+  transition: transform 0.125s linear 0.175s;
 }
-button:focus, button:active, button:hover {
+
+#navbar button:focus, button:active, button:hover {
   outline: 0;
 }
-button:hover {
+
+#navbar button:hover {
   cursor: pointer;
 }
-button:before, button:after {
+
+#navbar button:before, button:after {
   display: block;
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 30px;
   height: 4px;
   border-radius: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.125s linear 0.2s;
 }
-button:before {
+
+#navbar button:before {
   transform: translate(10px, 10px) rotate(0);
 }
-button:after {
+
+#navbar button:after {
   transform: translate(10px, 30px) rotate(0);
 }
 
-.active button {
+#navbar .active button {
   transform: translate(0, 0);
   transition: all 0.125s linear;
+
 }
-.active button:before, .active button:after {
+#navbar .active button:before, .active button:after {
   width: 40px;
   transition: all 0.375s linear 0.125s;
 }
-.active button:before {
+#navbar .active button:before {
   transform: translate(5px, 20px) rotate(45deg);
+  background-color: red;
 }
-.active button:after {
+#navbar .active button:after {
   transform: translate(5px, 20px) rotate(-45deg);
+  background-color: red;
 }
 
 
-ul {
+#navbar ul {
   margin: 50px 0 0 0;
   padding: 0;
 }
-ul li {
+#navbar ul li {
   list-style-type: none;
 }
-ul li:nth-child(6) a:hover {
+#navbar ul li:nth-child(6) a:hover {
   background-color: rgba(128, 0, 0, 0.7);
 }
 
-a {
+#navbar a {
   display: block;
   padding: 20px;
-  color: white;
+  color: #D0021B;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 450;
   transition: all 0.0625s linear;
+  padding-left: 50px;
 }
-a:hover {
-  background-color: #7d8828;
+#navbar a:hover {
+  cursor:pointer;
+  opacity: 0.5;
 }
-
-
-
-
 
 /* ----------FOOTER------------ */
 
@@ -120,4 +206,96 @@ footer .bottom {
 footer .bottom  a {
   display: flex;
   height: 80px;
+}
+
+@media (max-width: 600) {
+
+
+  header .title {
+    font-size: 2.5em;
+  }
+
+}
+
+@media (min-width: 600) {
+
+
+  header .title {
+    font-size: 2.5em;
+  }
+
+}
+
+/*@media (min-width: 320) {
+
+
+  header .title {
+    font-size: .5em;
+  }
+
+}
+
+
+
+
+@media (min-width: 766px) {
+  .schedule p.date {
+    float: right;
+  }
+
+  header .title {
+    font-size: 2.5em;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .schedule p.date {
+    float: right;
+  }
+
+  header .title {
+    font-size: 1.5em;
+  }
+
+  .schedule tr td:first-child {
+    width: 15%;
+  }
+}*/
+
+#schedule-wrapper {
+  margin: 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.5rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* ------CONTACTS--------- */
+#contacts-wrapper {
+  margin: 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#contacts-info {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+#yandex-map {
+  grid-column: 2;
+    grid-row: 2;
+}
+
+#youtube {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#header-image {
+  width: 100%;
+  height: auto;
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class Requisites extends Component {
   render() {
     return (
       <div>
-        <h3>Реквизиты:</h3>
+        <Header title="Реквизиты" image='Charity.jpg' />
+        <h3>:</h3>
       </div>
     )
   }
