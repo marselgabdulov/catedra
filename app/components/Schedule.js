@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Header from './Header';
 
 class Schedule extends Component {
   render() {
     return (
       <div>
-        <Header title="Расписание богослужений" image='bible_2.jpg' />
         <div id='schedule-wrapper'>
           <table className="schedule">
             <thead>

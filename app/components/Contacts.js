@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import YandexMap from './YandexMap';
 import Youtube from './Youtube';
-import Header from './Header';
 
 class Contacts extends Component {
   render() {
     return (
       <div>
-        <Header title='Контакты' image='aaron-burden.jpg' />
       <div id="contacts-wrapper">
         <div id="contacts-info">
           <p>123557,&nbsp;&nbsp;Москва,&nbsp;&nbsp;улица Малая Грузинская д.27/13</p>
