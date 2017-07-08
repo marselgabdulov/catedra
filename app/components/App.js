@@ -17,10 +17,6 @@ class App extends React.Component {
         <div>
           <Navigation />
           <div className='content-container'>
-            <section className='secondary-navigation'>
-              <h3>Дополнительная навигация</h3>
-            </section>
-            <section className='main-content'>
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/contacts' component={Contacts} />
@@ -30,7 +26,6 @@ class App extends React.Component {
                   return <p>Not Found</p>
                 } } />
             </Switch>
-          </section>
             <section className='advert-side'>
               <h3>Рекламный блок</h3>
             </section>
