@@ -1,3 +1,4 @@
+/*-----MAIN-------------*/
 body, html {
   height: 100%;
   margin: 0;
@@ -6,6 +7,28 @@ body, html {
   font-size: 1em;
 }
 
+input {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* #D0021B */
+
+/*-----TYPOGRAPHY-------*/
+
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+/*-----NAVIGATION-------*/
+
+/*-----navigation-------*/
 #navbar nav {
   font-family: Tahoma, sans-serif;
   font-size: 16px;
@@ -26,8 +49,6 @@ body, html {
   transform: translate(0, 0);
 }
 
-/*-------NAVIGATION--------*/
-
 #navbar ul {
   margin: 50px 0 0 0;
   padding: 0;
@@ -38,8 +59,6 @@ body, html {
 #navbar ul li:nth-child(6) a:hover {
   background-color: rgba(128, 0, 0, 0.7);
 }
-
-/* #D0021B */
 
 #navbar a {
   display: block;
@@ -56,6 +75,7 @@ body, html {
   opacity: 0.5;
 }
 
+/*-----header-----------*/
 
 #pseudo-header {
   display: flex;
@@ -74,14 +94,13 @@ body, html {
   margin-top: 1em;
 }
 
-input {
-  outline: 0;
-}
 
-button:hover {
-  cursor: pointer;
-}
+/*-----menu-button------*/
 
+
+/*-----sidebar----------*/
+
+/*-----social-links-----*/
 .icons {
   text-decoration: none;
   background-color: transparent;
@@ -89,12 +108,34 @@ button:hover {
   height: auto;
 }
 
-h1 {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 3rem;
-  white-space: nowrap;
+
+/*-----CONTENT----------*/
+
+/*-----contacts---------*/
+#contacts-wrapper {
+  margin: 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
 }
+
+#contacts-info {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+#yandex-map {
+  grid-column: 2;
+    grid-row: 2;
+}
+
+#youtube {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/*-----shcedule---------*/
 
 .schedule {
   width: 100%;
@@ -133,15 +174,15 @@ h1 {
   text-transform: uppercase;
 }
 
-/*.wrapper {
-  margin: 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}*/
+#schedule-wrapper {
+  margin: 2% 2%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.5rem;
+  grid-auto-rows: minmax(100px, auto);
+}
 
-
-/* ----------FOOTER------------ */
+/*-----FOOTER-----------*/
 
 footer {
   min-height: 100px;
@@ -172,8 +213,9 @@ footer .bottom  a {
   height: 80px;
 }
 
-@media (max-width: 600) {
+/*-----MEDIA------------*/
 
+@media (max-width: 600) {
 
   header .title {
     font-size: 2.5em;
@@ -182,7 +224,6 @@ footer .bottom  a {
 }
 
 @media (min-width: 600) {
-
 
   header .title {
     font-size: 2.5em;
@@ -198,9 +239,6 @@ footer .bottom  a {
   }
 
 }
-
-
-
 
 @media (min-width: 766px) {
   .schedule p.date {
@@ -226,40 +264,3 @@ footer .bottom  a {
     width: 15%;
   }
 }*/
-
-#schedule-wrapper {
-  margin: 2% 2%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.5rem;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-/* ------CONTACTS--------- */
-#contacts-wrapper {
-  margin: 2% 2%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-#contacts-info {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-
-#yandex-map {
-  grid-column: 2;
-    grid-row: 2;
-}
-
-#youtube {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-#header-image {
-  width: 100%;
-  height: auto;
-}
