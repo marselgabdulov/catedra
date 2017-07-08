@@ -137,8 +137,30 @@ h1 {
 
 /*-----CONTENT----------*/
 
+.content-container {
+  display: flex;
+  padding-top: 5em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  -webkit-flex-direction: row;
+   flex-direction: row;
+  justify-content: center;
+}
+
+.content-container .secondary-navigation {
+  width:20%;
+}
+
+.content-container .main-content {
+  width: 60%;
+}
+
+.content-container .advert-side {
+  width: 20%;
+}
 /*-----contacts---------*/
-.contacts-wrapper {
+/*.contacts-wrapper {
   margin: 2% 2%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -159,7 +181,7 @@ h1 {
 .youtube {
   grid-column: 3;
   grid-row: 2;
-}
+}*/
 
 /*-----shcedule---------*/
 
@@ -241,52 +263,17 @@ footer .bottom  a {
 
 /*-----MEDIA------------*/
 
-@media (max-width: 600) {
-
-  header .title {
-    font-size: 2.5em;
+@media only screen and (max-width: 768px) {
+  .content-container .secondary-navigation {
+    display: none;
   }
 
+  .content-container .advert-side {
+    display: none;
+  }
+
+  .content-container .main-content {
+    width: 100%;
+    margin: 0.5em;
+  }
 }
-
-@media (min-width: 600) {
-
-  header .title {
-    font-size: 2.5em;
-  }
-
-}
-
-/*@media (min-width: 320) {
-
-
-  header .title {
-    font-size: .5em;
-  }
-
-}
-
-@media (min-width: 766px) {
-  .schedule p.date {
-    float: right;
-  }
-
-  header .title {
-    font-size: 2.5em;
-  }
-
-}
-
-@media (max-width: 500px) {
-  .schedule p.date {
-    float: right;
-  }
-
-  header .title {
-    font-size: 1.5em;
-  }
-
-  .schedule tr td:first-child {
-    width: 15%;
-  }
-}*/

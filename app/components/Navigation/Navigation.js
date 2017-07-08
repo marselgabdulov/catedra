@@ -6,10 +6,10 @@ import Sidebar from './Sidebar';
 
 class Navigation extends React.Component {
   constructor(props) {
-
     super(props);
+    
     this.state = {
-      status: 'active'
+      status: 'hidden'
     }
 
     this.handler = this.handler.bind(this);

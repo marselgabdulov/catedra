@@ -12,19 +12,29 @@ import Footer from './Footer';
 class App extends React.Component {
   render() {
     return (
-      <div className='wrapper'>
+      <div>
         <BrowserRouter>
         <div>
           <Navigation />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/contacts' component={Contacts} />
-            <Route exact path='/schedule' component={Schedule} />
-            <Route exact path='/requisites' component={Requisites} />
-            <Route render={function () {
-              return <p>Not Found</p>
-            } } />
-          </Switch>
+          <div className='content-container'>
+            <section className='secondary-navigation'>
+              <h3>Дополнительная навигация</h3>
+            </section>
+            <section className='main-content'>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/contacts' component={Contacts} />
+                <Route exact path='/schedule' component={Schedule} />
+                <Route exact path='/requisites' component={Requisites} />
+                <Route render={function () {
+                  return <p>Not Found</p>
+                } } />
+            </Switch>
+          </section>
+            <section className='advert-side'>
+              <h3>Рекламный блок</h3>
+            </section>
+          </div>
           {/* <Footer /> */}
         </div>
         </BrowserRouter>
