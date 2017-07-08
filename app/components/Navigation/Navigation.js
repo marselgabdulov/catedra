@@ -9,7 +9,7 @@ class Navigation extends React.Component {
 
     super(props);
     this.state = {
-      status: 'hidden'
+      status: 'active'
     }
 
     this.handler = this.handler.bind(this);

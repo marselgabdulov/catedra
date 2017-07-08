@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
         <header>
             <NavLink exact activeClassName='active' to='/'>
-              <img className='header-icon' src={require('../../images/icons/cathedral.png')} alt=""/>
+              <span className="home-link"><h2>Храм</h2></span>
             </NavLink>
         </header>
     )
