@@ -12,10 +12,7 @@ import Footer from './Footer';
 class App extends React.Component {
   render() {
     return (
-      <div className="wrapper">
-
-
-
+      <div className='wrapper'>
         <BrowserRouter>
         <div>
           <Navigation />

@@ -12,7 +12,7 @@ class SocialLink extends React.Component {
 
   render() {
     return (
-      <a href={this.state.url} target="blank"><img className="svg-icon" src={require('../../images/icons/' + this.state.image)} alt={this.state.alt} /></a>
+      <a href={this.state.url} target='blank'><img className='svg-icon' src={require('../../images/icons/' + this.state.image)} alt={this.state.alt} /></a>
     )
   }
 }

@@ -4,7 +4,7 @@ class Requisites extends Component {
   render() {
     return (
       <div>
-        <h3>:</h3>
+        <h1>Реквизиты</h1>
       </div>
     )
   }

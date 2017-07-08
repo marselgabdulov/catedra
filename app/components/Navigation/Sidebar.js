@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div>
-      <div id="navbar">
+      <div className='navbar'>
         <nav role='navigation' className={this.props.status}>
           <ul>
             <li>

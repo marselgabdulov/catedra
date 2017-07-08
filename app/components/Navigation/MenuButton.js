@@ -11,14 +11,14 @@ class MenuButton extends React.Component {
 
   setIcon() {
     if(this.props.status === 'active') {
-      return "cancel"
+      return 'cancel'
     }
-    return "menu"
+    return 'menu'
   }
 
   render() {
-    console.log("button props: " + this.props.status);
-    return <input type="image" className="icons" id="open-close" onClick={this.props.action} src={require('../../images/icons/'+ this.setIcon() + '.svg')} />
+    console.log('button props: ' + this.props.status);
+    return <input type='image' className='icons' onClick={this.props.action} src={require('../../images/icons/'+ this.setIcon() + '.svg')} />
   }
 }
 

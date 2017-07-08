@@ -26,7 +26,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <div id="pseudo-header">
+        <div className='header'>
           <MenuButton status={this.state.status} action={this.handler} />
           <Header />
         </div>

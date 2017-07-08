@@ -5,10 +5,10 @@ class Schedule extends Component {
     return (
       <div>
         <div id='schedule-wrapper'>
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h3>Воскресенье</h3>
                 </th>
               </tr>
@@ -63,10 +63,10 @@ class Schedule extends Component {
           </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>ПОНЕДЕЛЬНИК</h4>
                 </th>
               </tr>
@@ -95,10 +95,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>ВТОРНИК</h4>
                 </th>
               </tr>
@@ -131,10 +131,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>СРЕДА</h4>
                 </th>
               </tr>
@@ -163,10 +163,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>ЧЕТВЕРГ</h4>
                 </th>
               </tr>
@@ -195,10 +195,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>ПЯТНИЦА</h4>
                 </th>
               </tr>
@@ -231,10 +231,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>СУББОТА</h4>
                 </th>
               </tr>
@@ -266,10 +266,10 @@ class Schedule extends Component {
           <h2>БОГОСЛУЖЕНИЯ ДЛЯ КАТОЛИКОВ ВИЗАНТИЙСКОГО ОБРЯДА</h2>
           <p>Богослужения совершаются каждую третью субботу месяца
           и ближние к этому дню пятницу и воскресение</p>
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>ПЯТНИЦА</h4>
                 </th>
               </tr>
@@ -286,10 +286,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h4>СУББОТА</h4>
                 </th>
               </tr>
@@ -306,10 +306,10 @@ class Schedule extends Component {
             </tbody>
           </table>
 
-          <table className="schedule">
+          <table className='schedule'>
             <thead>
               <tr>
-                <th colSpan="2">
+                <th colSpan='2'>
                   <h3>ВОСКРЕСЕНЬЕ</h3>
                 </th>
               </tr>
@@ -323,18 +323,18 @@ class Schedule extends Component {
           </table>
           <p>По всем вопросам, связанным с проведением богослужений и
             отправлением треб, обращайтесь
-            по телефону <a href="tel:+7-903-203-03-66">+7 903 203-03-66</a>, <br/>
-            <a href="mailto:konstshev@gmail.com">konstshev@gmail.com</a>, или в скайп uniat1973.</p>
+            по телефону <a href='tel:+7-903-203-03-66'>+7 903 203-03-66</a>, <br/>
+            <a href='mailto:konstshev@gmail.com'>konstshev@gmail.com</a>, или в скайп uniat1973.</p>
 
 
             <h2>БОГОСЛУЖЕНИЯ ДЛЯ КАТОЛИКОВ
             АРМЯНСКОГО ОБРЯДА</h2>
-            <p>Справки по тел.:<a href="tel:+7-926-904-91-49"> +7 926 904-91-49</a> о. Петрос Петросян SDB.</p>
+            <p>Справки по тел.:<a href='tel:+7-926-904-91-49'> +7 926 904-91-49</a> о. Петрос Петросян SDB.</p>
             <p>Божественная Литургия армянского обряда проходит
             каждое <strong style={{color:'#d0021b'}}>воскресенье</strong> в <time>15:30</time> и по пятницам в <time>13:00</time>.</p>
 
             <h2>БОГОСЛУЖЕНИЕ НА ИСПАНСКОМ ЯЗЫКЕ</h2>
-            <p>Справки по тел.:<a href="tel:+7-499-252-66-88">+7 499 252-66-88</a> о. Даниэле Солаццо FMVD.</p>
+            <p>Справки по тел.:<a href='tel:+7-499-252-66-88'>+7 499 252-66-88</a> о. Даниэле Солаццо FMVD.</p>
             <p><strong style={{color:'#d0021b'}}>Воскресенье</strong> в <time>14:30</time> Месса на испанском языке <time>13:00</time>.</p>
           </div>
         </div>

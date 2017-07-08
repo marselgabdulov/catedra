@@ -13,7 +13,7 @@ class Youtube extends Component {
 
     return (
       <YouTube
-        videoId="7nbaiaLmwKE"
+        videoId='7nbaiaLmwKE'
         opts={opts}
         onReady={this._onReady}
       />

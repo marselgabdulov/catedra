@@ -29,7 +29,7 @@ h1 {
 /*-----NAVIGATION-------*/
 
 /*-----navigation-------*/
-#navbar nav {
+.navbar nav {
   font-family: Tahoma, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -45,22 +45,22 @@ h1 {
   transition: transform 0.2s linear;
 }
 
-#navbar nav.active {
+.navbar nav.active {
   transform: translate(0, 0);
 }
 
-#navbar ul {
+.navbar ul {
   margin: 50px 0 0 0;
   padding: 0;
 }
-#navbar ul li {
+.navbar ul li {
   list-style-type: none;
 }
-#navbar ul li:nth-child(6) a:hover {
+.navbar ul li:nth-child(6) a:hover {
   background-color: rgba(128, 0, 0, 0.7);
 }
 
-#navbar a {
+.navbar a {
   display: block;
   padding: 20px;
   color: black;
@@ -70,14 +70,14 @@ h1 {
   transition: all 0.0625s linear;
   padding-left: 50px;
 }
-#navbar a:hover {
+.navbar a:hover {
   cursor:pointer;
   opacity: 0.5;
 }
 
 /*-----header-----------*/
 
-#pseudo-header {
+.header {
   display: flex;
   justify-content: space-around;
   background: transparent;
@@ -112,7 +112,7 @@ h1 {
 /*-----CONTENT----------*/
 
 /*-----contacts---------*/
-#contacts-wrapper {
+.contacts-wrapper {
   margin: 2% 2%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,17 +120,17 @@ h1 {
   grid-auto-rows: minmax(100px, auto);
 }
 
-#contacts-info {
+.contacts-info {
   grid-column: 2 / 4;
   grid-row: 1;
 }
 
-#yandex-map {
+.yandex-map {
   grid-column: 2;
     grid-row: 2;
 }
 
-#youtube {
+.youtube {
   grid-column: 3;
   grid-row: 2;
 }
@@ -174,7 +174,7 @@ h1 {
   text-transform: uppercase;
 }
 
-#schedule-wrapper {
+.schedule-wrapper {
   margin: 2% 2%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);

@@ -11,26 +11,26 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className="main">
-          <a href="http://cathmos.ru/" target="_blank" >
+        <div className='main'>
+          <a href='http://cathmos.ru/' target='_blank' >
             <img src={Archdiocese} />
           </a>
-          <a href="http://deboniarte.org/" target="_blank">
+          <a href='http://deboniarte.org/' target='_blank'>
             <img src={DeBoniArte} />
           </a>
         </div>
 
-        <div className="bottom">
-          <a href="http://mic-minsk.by/breviaryj-new.html" target="_blank">
+        <div className='bottom'>
+          <a href='http://mic-minsk.by/breviaryj-new.html' target='_blank'>
             <img src={Liturgia} />
           </a>
-          <a href="http://www.dbiblio.org/" target="_blank">
+          <a href='http://www.dbiblio.org/' target='_blank'>
             <img src={PokrovskieVorota} />
           </a>
-          <a href="http://www.news.va/en" target="_blank">
+          <a href='http://www.news.va/en' target='_blank'>
             <img src={NewsVa} />
           </a>
-          <a href="https://artbene.ru/" target="_blank">
+          <a href='https://artbene.ru/' target='_blank'>
             <img src={Artebene} />
           </a>
         </div>
