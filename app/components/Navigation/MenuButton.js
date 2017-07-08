@@ -1,6 +1,6 @@
 import React from 'react';
 
-class OpenButton extends React.Component {
+class MenuButton extends React.Component {
   constructor(props) {
     super(props);
 
@@ -22,4 +22,4 @@ class OpenButton extends React.Component {
   }
 }
 
-export default OpenButton;
+export default MenuButton;

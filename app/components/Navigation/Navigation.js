@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OpenButton from './OpenButton';
+import MenuButton from './MenuButton';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
@@ -27,7 +27,7 @@ class Navigation extends React.Component {
     return (
       <div>
         <div id="pseudo-header">
-          <OpenButton status={this.state.status} action={this.handler} />
+          <MenuButton status={this.state.status} action={this.handler} />
           <Header />
         </div>
         <Sidebar status={this.state.status} />
