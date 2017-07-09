@@ -74,7 +74,7 @@ h1 {
 
 .navbar a {
   padding: 5px;
-  color: black;
+  color: #D0022B;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 450;
@@ -90,23 +90,26 @@ h1 {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: no-wrap;
   align-content: center;
-  background: transparent;
-  width: 8.5em;
+  background-color: #D0021B;
+  /*background: transparent;*/
+  width: 14.5em;
   height: auto;
   z-index: 500;
-  text-align: center;
   position: fixed;
-  top: 1em;
-  left: 2em;
+
 }
 
 .home-link {
-  color: #1D1D1B;
+  color: white;
 }
 
 .home-link h2 {
+  padding-right: 1.45em;
+  width: 100%;
   font-size: 2rem;
 }
 
@@ -114,7 +117,6 @@ h1 {
   opacity: 0.5;
 }
 
-/*-----menu-button------*/
 
 
 /*-----sidebar----------*/
@@ -125,14 +127,22 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 5em;
-  background-color: pink;
+  background: transparent;
 }
 
 .icons {
   text-decoration: none;
-  background-color: transparent;
+  background: transparent;
   width: 1.4em;
-  height: auto;
+  height: 1.4em;
+}
+
+/*-----menu-button------*/
+.menu-button {
+  text-decoration: none;
+  background: transparent;
+  width: 2em;
+  height: 2em;
 }
 
 
@@ -190,7 +200,7 @@ h1 {
 .schedule th h3, h4 {
   color: #D0021B;
   border-bottom: 1px solid;
-  padding-left: 50px;
+  /*padding-left: 50px;*/
 }
 
 .schedule h3 {
@@ -198,7 +208,7 @@ h1 {
 }
 
 .schedule tbody td:first-child {
-  text-align: center;
+  text-align: left;
 }
 .schedule tr td:first-child {
   font-weight: bold;
@@ -272,7 +282,8 @@ footer .bottom  a {
   }
 
   .header {
-    position: absolute;
+    position: fixed;
+    width: 100%;
   }
 
   .schedule {
