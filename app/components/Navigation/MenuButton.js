@@ -17,8 +17,7 @@ class MenuButton extends React.Component {
   }
 
   render() {
-    console.log('button props: ' + this.props.status);
-    return <input type='image' className='icons' onClick={this.props.action} src={require('../../images/icons/'+ this.setIcon() + '.svg')} />
+    return <input type='image' className='icons menu-button' onClick={this.props.action} src={require('../../images/icons/'+ this.setIcon() + '-white.svg')} />
   }
 }
 
