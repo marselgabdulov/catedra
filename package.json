@@ -27,14 +27,20 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-image-gallery": "^0.8.3",
+    "react-photo-gallery": "^5.6.1",
+    "react-scrollable-anchor": "^0.4.2",
     "react-youtube": "^7.4.0",
     "reactstrap": "^4.8.0",
     "yandex-map-react": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
+    "babel-helpers": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.1",
     "file-loader": "^0.11.2",
@@ -46,7 +52,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.9",
-    "webpack": "^3.0.0",
+    "webpack": "^3.1.0",
     "webpack-dev-server": "^2.4.5"
   }
 }

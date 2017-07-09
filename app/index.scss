@@ -1,3 +1,7 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
+
+
 /*-----MAIN-------------*/
 body, html {
   height: 100%;
@@ -9,6 +13,10 @@ body, html {
 
 input {
   outline: 0;
+}
+
+input:hover {
+  opacity: 0.5;
 }
 
 button:hover {
@@ -27,8 +35,9 @@ a {
 
 h1 {
   text-transform: uppercase;
+  /*font-family: Tahoma, sans-serif;*/
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   white-space: nowrap;
 }
 
@@ -44,7 +53,7 @@ h1 {
   z-index: 1;
   position: fixed;
   width: 100%;
-  height: 90%;
+  height: 100%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -96,7 +105,7 @@ h1 {
   align-content: center;
   background-color: #D0021B;
   /*background: transparent;*/
-  width: 14.5em;
+  width: 14.75em;
   height: auto;
   z-index: 500;
   position: fixed;
@@ -108,6 +117,7 @@ h1 {
 }
 
 .home-link h2 {
+  font-family: Tahoma, sans-serif;
   padding-right: 1.45em;
   width: 100%;
   font-size: 2rem;
@@ -150,7 +160,7 @@ h1 {
 
 .content-container {
   display: flex;
-  padding-top: 5em;
+  padding: 0em 0 5em 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -167,8 +177,16 @@ h1 {
    justify-content: space-between;
 }
 
+.page-header-message {
+  color: #D0021B;
+  padding-top: 2.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
 .content-container .main-content .main-part {
   width: 75%;
+  /*background-color: #F2F2F2;*/
 }
 
 .content-container .main-content .secondary-navigation {
@@ -188,8 +206,8 @@ h1 {
   width: 100%;
   max-width: 1000px;
   margin: auto auto 2em auto;
-  border: 1px solid #654491;
-  border-color: white;
+  /*border: 1px solid #654491;
+  border-color: white;*/
 }
 
 .schedule th {
@@ -202,6 +220,7 @@ h1 {
   border-bottom: 1px solid;
   /*padding-left: 50px;*/
 }
+
 
 .schedule h3 {
   font-weight: bold;
@@ -266,6 +285,29 @@ footer .bottom  a {
   .content-container .main-content {
     width: 100%;
 
+  }
+
+  .page-header-message {
+    color: #D0021B;
+    padding-top: 7.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  p {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    padding: 0 0.5em 0 0.5em;
   }
 
   .content-container .main-content .main-part {
