@@ -33,7 +33,7 @@ class App extends React.Component {
               <h3>Рекламный блок</h3>
             </section> */}
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
         </BrowserRouter>
       </div>
