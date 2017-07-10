@@ -25,10 +25,12 @@ class PhotoGallery extends React.Component {
     ]
 
     return (
-      <ImageGallery
-        items={images}
-        slideInterval={2000}
-        onImageLoad={this.handleImageLoad}/>
+      <section className="content">
+        <ImageGallery
+          items={images}
+          slideInterval={2000}
+          onImageLoad={this.handleImageLoad}/>
+      </section>
     );
   }
 
