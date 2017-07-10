@@ -1,22 +1,15 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
-
+$red-color: #D0022B;
 
 /*-----MAIN-------------*/
-body, html {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lora',serif;
-  font-size: 1em;
-}
-
-input {
-  outline: 0;
-}
-
-input:hover {
-  opacity: 0.5;
+  font-size: 1.05em;
+  line-height: 1.4em;
 }
 
 button:hover {
@@ -28,16 +21,14 @@ a {
   color: #6BAAC5;
 }
 
-
-/* #D0021B */
-
 /*-----TYPOGRAPHY-------*/
 
 h1 {
   text-transform: uppercase;
-  /*font-family: Tahoma, sans-serif;*/
+  // font-family: Tahoma, sans-serif;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5em;
+  line-height: 1.6em;
   white-space: nowrap;
 }
 
@@ -50,7 +41,7 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   line-height: 32px;
-  z-index: 1;
+  z-index: 50;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -83,7 +74,7 @@ h1 {
 
 .navbar a {
   padding: 5px;
-  color: #D0022B;
+  color: $red-color;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 450;
@@ -98,18 +89,29 @@ h1 {
 /*-----header-----------*/
 
 .header {
+  z-index: 100;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: no-wrap;
   align-content: center;
-  background-color: #D0021B;
+  background-color: $red-color;
   /*background: transparent;*/
-  width: 14.75em;
-  height: auto;
+  width: 12.75em;
+  height: 60px;
   z-index: 500;
   position: fixed;
 
+}
+
+.header {
+  input {
+    outline: 0;
+  }
+
+  input:hover {
+    opacity: 0.9;
+  }
 }
 
 .home-link {
@@ -124,7 +126,7 @@ h1 {
 }
 
 .header .home-link h2:hover {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 
@@ -158,45 +160,45 @@ h1 {
 
 /*-----CONTENT----------*/
 
-.content-container {
-  display: flex;
-  padding: 0em 0 5em 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  -webkit-flex-direction: row;
-   flex-direction: row;
-  justify-content: center;
+.content {
+  padding: 4em 5em 5em 5em;
+  h1 {
+    text-align: center;
+  }
 }
 
-.content-container .main-content {
-  width: 75%;
+.content .home-page {
+  width: 100%;
   display: flex;
   -webkit-flex-direction: row;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-around;
+}
+
+.content .home-page .left {
+	width: 42%;
+	height: auto;
+  padding-top: 1em;
+  // padding-top: 4.5em;
+}
+
+.content .home-page .right {
+  width: 48%;
+	height: auto;
+}
+
+img {
+  max-width:100%;
 }
 
 .page-header-message {
-  color: #D0021B;
+  color: $red-color;
   padding-top: 2.5em;
   text-align: center;
   font-weight: bold;
 }
 
-.content-container .main-content .main-part {
-  width: 75%;
-  /*background-color: #F2F2F2;*/
-}
 
-.content-container .main-content .secondary-navigation {
-  width: 25%;
-}
-
-
-.content-container .advert-side {
-  width: 25%;
-}
 /*-----contacts---------*/
 
 
@@ -205,9 +207,18 @@ h1 {
 .schedule {
   width: 100%;
   max-width: 1000px;
-  margin: auto auto 2em auto;
+  margin: auto auto auto auto;
   /*border: 1px solid #654491;
   border-color: white;*/
+}
+
+.schedule-page .header-message h1 {
+  text-align:center;
+  color: $red-color;
+}
+
+.schedule-page .add-info {
+  margin: 2.5em;
 }
 
 .schedule th {
@@ -216,7 +227,7 @@ h1 {
   margin-bottom: 2.5em;
 }
 .schedule th h3, h4 {
-  color: #D0021B;
+  color: $red-color;
   border-bottom: 1px solid;
   /*padding-left: 50px;*/
 }
@@ -281,90 +292,279 @@ footer .bottom  a {
 
 /*-----MEDIA------------*/
 
-@media only screen and (max-width: 768px) {
-  .content-container .main-content {
-    width: 100%;
-
-  }
-
-  .page-header-message {
-    color: #D0021B;
-    padding-top: 7.5em;
-  }
+/* Смартфоны (портретный режим) ----------- */
+@media only screen
+and (max-width : 768px) {
 
   h1 {
-    font-size: 1.5em;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  h2 {
-    font-size: 1.2em;
-    padding: 0 0.5em 0 0.5em;
-  }
+  .content {
+    padding: 3.5em 0.5em  0.5em 0.5em;
 
-  p {
-    padding: 0 0.5em 0 0.5em;
-  }
+    .home-page {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      align-content: center;
 
-  h3 {
-    font-size: 1.1em;
-    padding: 0 0.5em 0 0.5em;
-  }
+      .left {
+       	width: 100%;
+       	height: auto;
+        padding-top: 1em;
+      }
 
-  .content-container .main-content .main-part {
-    width: 100%;
-  }
-
-  .content-container .main-content .secondary-navigation {
-    display:none;
-  }
-
-
-  .content-container .advert-side {
-    display: none;
-  }
-
-  .header {
-    position: fixed;
-    width: 100%;
-  }
-
-  .schedule {
-    background-color: pink;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto auto 2em auto;
-    border: 1px solid #654491;
-    border-color: white;
-  }
-
-  .schedule th {
-    text-align: left;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  .schedule th h3, h4 {
-    color: #D0021B;
-    border-bottom: 1px solid;
-
-  }
-
-  .schedule h3 {
-    font-size: 0.7em;
-    font-weight: bold;
-  }
-
-  .schedule tbody td:first-child {
-    text-align: center;
-  }
-  .schedule tr td:first-child {
-    font-weight: bold;
-    width: 15%;
-  }
-  .schedule td {
-    padding: 0.5em;
-  }
-  .schedule td strong {
-    text-transform: uppercase;
+      .right {
+        width: 100%;
+       	height: auto;
+        text-align: justify;
+      }
+    }
   }
 
 }
+
+/* Планшеты (портретный и альбомный режимы) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .content {
+    padding: 3.5em 0.5em  0.5em 0.5em;
+
+    .home-page {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .left {
+       	width: 42%;
+       	height: auto;
+        padding-top: 5em;
+      }
+
+      .right {
+        width: 52%;
+       	height: auto;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-width : 1024px)
+and (max-width : 1366px) {
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  html, body {
+    font-size: 1.05em;
+  }
+
+  .content {
+    padding: 3.5em 5em  5em 5em;
+
+    .home-page {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .left {
+       	width: 46%;
+       	height: auto;
+      }
+
+      .right {
+        width: 46%;
+       	height: auto;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/* Большие экраны ----------- */
+@media only screen
+and (min-width : 1367px) {
+  font-size: 1.5em;
+  line-height: 2em;
+
+  h1 {
+    text-align: center;
+  }
+
+  .content {
+    padding: 4em 16em 5em 16em;
+    h1 {
+      text-align: center;
+      line-height: 1.5em;
+    }
+  }
+
+  .content .home-page {
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+     flex-direction: row;
+     justify-content: space-between;
+  }
+
+  .content .home-page .left {
+  	width: 48%;
+  	height: auto;
+    padding-top: 1em;
+    // padding-top: 4.5em;
+  }
+
+  .content .home-page .right {
+    width: 48%;
+  	height: auto;
+    padding-top: 1.5em;
+  }
+
+  img {
+    max-width:100%;
+  }
+
+  .page-header-message {
+    color: $red-color;
+    padding-top: 2.5em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+}
+
+// @media only screen and (max-width: 768px) {
+//
+//   .home-link h2 {
+//     margin-right: .1em;
+//     width: 100%;
+//     font-size: 1.5rem;
+//   }
+//
+//   .content {
+//     padding: 3.5em 0.5em  0.5em 0.5em;
+//   }
+//
+//   .content .home-page {
+//     width: 100%;
+//     display: flex;
+//     -webkit-flex-direction: column;
+//      flex-direction: column;
+//      align-content: center;
+//   }
+//
+//   .content .home-page .left {
+//   	width: 100%;
+//   	height: auto;
+//   }
+//
+//   .content .home-page .right {
+//     width: 100%;
+//   	height: auto;
+//     text-align: justify;
+//   }
+//
+//
+//   .page-header-message {
+//     color: $red-color;
+//     padding-top: 7.5em;
+//   }
+//
+//   h1 {
+//     font-size: 1.5em;
+//   }
+//
+//   h2 {
+//     font-size: 1.2em;
+//     padding: 0 0.5em 0 0.5em;
+//   }
+//
+//   p {
+//     padding: 0 0.5em 0 0.5em;
+//   }
+//
+//   h3 {
+//     font-size: 1.1em;
+//     padding: 0 0.5em 0 0.5em;
+//   }
+//
+//   .content-container .main-content .main-part {
+//     width: 100%;
+//   }
+//
+//   .content-container .main-content .secondary-navigation {
+//     display:none;
+//   }
+//
+//
+//   .content-container .advert-side {
+//     display: none;
+//   }
+//
+//   .header {
+//     position: fixed;
+//     width: 100%;
+//   }
+//
+//   .schedule {
+//     width: 100%;
+//     max-width: 1000px;
+//     margin: auto auto 2em auto;
+//     border: 1px solid #654491;
+//     border-color: white;
+//     font-size: 0.8em;
+//   }
+//
+//   .schedule-page .header-message h1 {
+//     font-size: 0.9em;
+//     color: $red-color;
+//   }
+//
+//   .schedule th {
+//     text-align: left;
+//     padding: 0;
+//     margin-bottom: 0;
+//   }
+//   .schedule th h3, h4 {
+//     color: $red-color;
+//     border-bottom: 1px solid;
+//
+//   }
+//
+//   .schedule h3 {
+//     font-size: 0.7em;
+//     font-weight: bold;
+//   }
+//
+//   .schedule tbody td:first-child {
+//     text-align: center;
+//   }
+//   .schedule tr td:first-child {
+//     font-weight: bold;
+//     width: 15%;
+//   }
+//   .schedule td {
+//     padding: 0.5em;
+//   }
+//   .schedule td strong {
+//     text-transform: uppercase;
+//   }
+//
+// }

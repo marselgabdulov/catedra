@@ -5,6 +5,8 @@ import Home from './Home';
 import Contacts from './Contacts';
 import Schedule from './Schedule';
 import Requisites from './Requisites';
+import PhotoGallery from './PhotoGallery';
+
 
 import Navigation from './Navigation/Navigation';
 import Footer from './Footer';
@@ -16,19 +18,20 @@ class App extends React.Component {
         <BrowserRouter>
         <div>
           <Navigation />
-          <div className='content-container'>
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/contacts' component={Contacts} />
-                <Route exact path='/schedule' component={Schedule} />
-                <Route exact path='/requisites' component={Requisites} />
-                <Route render={function () {
-                  return <p>Not Found</p>
-                } } />
-            </Switch>
-            <section className='advert-side'>
+          <div className='content'>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/contacts' component={Contacts} />
+              <Route exact path='/schedule' component={Schedule} />
+              <Route exact path='/requisites' component={Requisites} />
+              <Route exact path='/photogallery' component={PhotoGallery} />
+              <Route render={function () {
+                return <p>Not Found</p>
+              } } />
+          </Switch>
+            {/* <section className='advert-side'>
               <h3>Рекламный блок</h3>
-            </section>
+            </section> */}
           </div>
           {/* <Footer /> */}
         </div>
