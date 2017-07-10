@@ -1,6 +1,9 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
 $red-color: #D0022B;
+$link-color: #1F5768;
+$secondary-background: #f2f2f2;
+$footer-color: #fcfcfc;
 
 /*-----MAIN-------------*/
 html, body {
@@ -18,7 +21,7 @@ button:hover {
 
 a {
   text-decoration: none;
-  color: #6BAAC5;
+  color: $link-color;
 }
 
 /*-----TYPOGRAPHY-------*/
@@ -48,7 +51,7 @@ h1 {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: #f2f2f2;
+  background-color: $secondary-background;
   transform: translate(-100%, 0);
   transition: transform 0.2s linear;
   display: flex;
@@ -157,14 +160,18 @@ h1 {
   height: 2em;
 }
 
-
 /*-----CONTENT----------*/
 
 .content {
+  min-height: 90vh;
   padding: 4em 5em 5em 5em;
   h1 {
     text-align: center;
   }
+}
+
+.page-header {
+  color: $red-color;
 }
 
 .content .home-page {
@@ -198,27 +205,38 @@ img {
   font-weight: bold;
 }
 
-
 /*-----contacts---------*/
 
 
 /*-----shcedule---------*/
 
+.schedule-page {
+  h1, h2, h3, h4 {
+    color: $red-color;
+  }
+}
+
 .schedule {
   width: 100%;
-  max-width: 1000px;
   margin: auto auto auto auto;
-  /*border: 1px solid #654491;
-  border-color: white;*/
+}
+
+.schedule-page  h2 {
+  color: $red-color;
+}
+
+.schedule-page   {
+  padding: 0 9em;
 }
 
 .schedule-page .header-message h1 {
+  font-size: 35px;
   text-align:center;
   color: $red-color;
 }
 
 .schedule-page .add-info {
-  margin: 2em 5em;;
+  margin: 2em 5em;
 }
 
 .schedule th {
@@ -229,66 +247,70 @@ img {
 .schedule th h3, h4 {
   color: $red-color;
   border-bottom: 1px solid;
-  /*padding-left: 50px;*/
 }
 
-
 .schedule h3 {
+
   font-weight: bold;
 }
 
 .schedule tbody td:first-child {
   text-align: left;
 }
+
 .schedule tr td:first-child {
   font-weight: bold;
   width: 150px;
 }
+
 .schedule td {
   padding: 0.5em;
 }
+
 .schedule td strong {
   text-transform: uppercase;
-}
-
-.schedule-wrapper {
-  margin: 2% 2%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.5rem;
-  grid-auto-rows: minmax(100px, auto);
 }
 
 /*-----FOOTER-----------*/
 
 footer {
+  text-transform: uppercase;
+  padding: 2em 6em 0em 0em;
   min-height: 100px;
-  background: white;
-  border-top: 1px solid;
-  padding-top: 1em;
+  font-size: 0.65em;
+
+  a {
+    color: $link-color;
+  }
+
+  background: $footer-color;
+
+  display: flex;
+  flex-directions: row;
+  justify-content: spase-around;
+
+  .contact-info {
+    width: 25%;
+    text-align: right;
+  }
+
+  .address {
+    width: 25%;
+    text-align: right;
+  }
+
+  .partners {
+    width: 25%;
+    text-align: right;
+  }
+
+  .partners-2 {
+    width: 25%;
+    text-align: right;
+  }
+
 }
 
-footer .main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-footer .bottom {
-  padding-top: 1em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .bottom  a {
-  display: flex;
-  height: 80px;
-}
 
 /*-----MEDIA------------*/
 
@@ -450,121 +472,88 @@ and (min-width : 1367px) {
 
 }
 
-// @media only screen and (max-width: 768px) {
-//
-//   .home-link h2 {
-//     margin-right: .1em;
-//     width: 100%;
-//     font-size: 1.5rem;
-//   }
-//
-//   .content {
-//     padding: 3.5em 0.5em  0.5em 0.5em;
-//   }
-//
-//   .content .home-page {
-//     width: 100%;
-//     display: flex;
-//     -webkit-flex-direction: column;
-//      flex-direction: column;
-//      align-content: center;
-//   }
-//
-//   .content .home-page .left {
-//   	width: 100%;
-//   	height: auto;
-//   }
-//
-//   .content .home-page .right {
-//     width: 100%;
-//   	height: auto;
-//     text-align: justify;
-//   }
-//
-//
-//   .page-header-message {
-//     color: $red-color;
-//     padding-top: 7.5em;
-//   }
-//
-//   h1 {
-//     font-size: 1.5em;
-//   }
-//
-//   h2 {
-//     font-size: 1.2em;
-//     padding: 0 0.5em 0 0.5em;
-//   }
-//
-//   p {
-//     padding: 0 0.5em 0 0.5em;
-//   }
-//
-//   h3 {
-//     font-size: 1.1em;
-//     padding: 0 0.5em 0 0.5em;
-//   }
-//
-//   .content-container .main-content .main-part {
-//     width: 100%;
-//   }
-//
-//   .content-container .main-content .secondary-navigation {
-//     display:none;
-//   }
-//
-//
-//   .content-container .advert-side {
-//     display: none;
-//   }
-//
-//   .header {
-//     position: fixed;
-//     width: 100%;
-//   }
-//
-//   .schedule {
-//     width: 100%;
-//     max-width: 1000px;
-//     margin: auto auto 2em auto;
-//     border: 1px solid #654491;
-//     border-color: white;
-//     font-size: 0.8em;
-//   }
-//
-//   .schedule-page .header-message h1 {
-//     font-size: 0.9em;
-//     color: $red-color;
-//   }
-//
-//   .schedule th {
-//     text-align: left;
-//     padding: 0;
-//     margin-bottom: 0;
-//   }
-//   .schedule th h3, h4 {
-//     color: $red-color;
-//     border-bottom: 1px solid;
-//
-//   }
-//
-//   .schedule h3 {
-//     font-size: 0.7em;
-//     font-weight: bold;
-//   }
-//
-//   .schedule tbody td:first-child {
-//     text-align: center;
-//   }
-//   .schedule tr td:first-child {
-//     font-weight: bold;
-//     width: 15%;
-//   }
-//   .schedule td {
-//     padding: 0.5em;
-//   }
-//   .schedule td strong {
-//     text-transform: uppercase;
-//   }
-//
-// }
+@media only screen and (max-width: 768px) {
+
+  .schedule-page   {
+    padding: 1em 0.5em;
+  }
+
+
+  .schedule {
+    width: 100%;
+    margin: auto auto 2em auto;
+    border-color: white;
+    font-size: 0.8em;
+  }
+
+  .schedule-page .header-message h1 {
+    font-size: 0.9em;
+    color: $red-color;
+  }
+
+  .schedule-page  h2 {
+    font-size: 0.9em;
+    color: $red-color;
+  }
+
+  .schedule th {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .schedule th h3, h4 {
+    color: $red-color;
+    border-bottom: 1px solid;
+  }
+
+  .schedule h3 {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+
+  .schedule tbody td:first-child {
+    text-align: center;
+  }
+
+  .schedule tr td:first-child {
+    font-weight: bold;
+    width: 15%;
+  }
+
+  .schedule td {
+    padding: 0.5em;
+  }
+
+  .schedule td strong {
+    text-transform: uppercase;
+  }
+
+  footer {
+    font-size: 0.5em;
+    flex-direction: column;
+    padding: 0;
+
+    .contact-info {
+      width: 100%;
+      text-align: center;
+    }
+
+    .address {
+      width: 100%;
+      text-align: center;
+
+      .literal {
+        display: none;
+      }
+    }
+
+    .partners {
+      display:none;
+    }
+
+    .partners-2 {
+      display:none;
+    }
+
+  }
+}
