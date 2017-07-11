@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import Archdiocese from '../images/Archdiocese.jpeg';
-import DeBoniArte from '../images/de_boni_arte.jpeg';
-import Artebene from '../images/artebene.jpeg';
-import Liturgia from '../images/liturgia.jpeg';
-import NewsVa from '../images/news_va.png';
-import PokrovskieVorota from '../images/pokrovskie.png';
 const NavLink = require('react-router-dom').NavLink;
 
 class Footer extends Component {
