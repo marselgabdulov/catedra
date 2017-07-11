@@ -1,0 +1,62 @@
+#sacramentum-page {
+  margin: 0 5em;
+  padding: 0 4em;
+
+
+  h2 {
+    text-align: center;
+  }
+
+  .header-message {
+    text-align: right;
+  }
+
+  .vertical-img {
+    float: left;
+    width: 40%;
+    height:auto;
+    margin: 0 20px 20px 0;
+  }
+
+  .vertical-img-right {
+    float: right;
+    width: 40%;
+    height:auto;
+    margin: 0 0 20px 20px;
+  }
+
+
+  .horisontal-img {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin: 0 0 20px 20px;
+  }
+
+  .horisontal-img-left {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0 20px 20px 0;
+  }
+
+  .text-wrapper {
+    text-align: justify;
+    text-indent: 2em;
+  }
+
+  #header-image {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #sacramentum-page {
+    margin: 0 0em;
+    padding: 0 0em;
+
+    .vertical-img, .horisontal-img {
+      width: 100%;
+    }
+  }
+}
