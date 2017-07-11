@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Schedule extends Component {
   render() {
     return (
-      <section className='schedule-page'>
+      <section id='schedule-page'>
         <div className='header-message'>
           <h1>Расписание богослужений</h1>
         </div>

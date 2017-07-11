@@ -6,9 +6,6 @@ class Contacts extends Component {
   render() {
     return (
       <section className='main-content'>
-        <div className='secondary-navigation'>
-          <h3>secondary</h3>
-        </div>
         <div className='main-part'>
           <div className='contacts-info'>
             <p>123557,&nbsp;&nbsp;Москва,&nbsp;&nbsp;улица Малая Грузинская д.27/13</p>

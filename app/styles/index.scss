@@ -12,9 +12,9 @@ $footer-color: #fcfcfc;
 
 /*-----MAIN-------------*/
 html, body {
+  position: relative;
+  // padding-bottom: 6rem;
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: 'PT Serif', serif;
   // font-family: 'Lora',serif;
   font-size: 18px;
@@ -55,7 +55,7 @@ h1 {
     max-width:100%;
   }
 
-  .home-page {
+  #home-page {
     width: 100%;
     display: flex;
     min-height: 70vh;
@@ -105,10 +105,9 @@ and (max-width : 768px) {
   }
 
   .content {
-      padding: 4em 0.5em  0.5em 0.5em;
+    padding: 4em 0.5em  0.5em 0.5em;
 
-
-    .home-page {
+    #home-page {
       width: 100%;
       display: flex;
       -webkit-flex-direction: column;
@@ -143,7 +142,7 @@ and (max-width : 1024px) {
   .content {
     padding: 2em 4em  2em 2em;
 
-    .home-page {
+    #home-page {
       width: 100%;
       display: flex;
       -webkit-flex-direction: row;
@@ -153,7 +152,7 @@ and (max-width : 1024px) {
       .left {
        	width: 42%;
        	height: auto;
-
+        padding-top: 6em;
       }
 
       .right {
@@ -180,7 +179,7 @@ and (max-width : 1366px) {
   .content {
     padding: 1em 5em  5em 5em;
 
-    .home-page {
+    #home-page {
       width: 100%;
       display: flex;
       -webkit-flex-direction: row;
@@ -190,13 +189,13 @@ and (max-width : 1366px) {
       .left {
        	width: 46%;
        	height: auto;
-        // padding-top: 2.5em;
       }
 
       .right {
         width: 46%;
        	height: auto;
         text-align: left;
+
       }
     }
   }
@@ -205,6 +204,7 @@ and (max-width : 1366px) {
 /* Большие экраны ----------- */
 @media only screen
 and (min-width : 1367px) {
+
   font-size: 1.5em;
   line-height: 2em;
 
@@ -212,102 +212,56 @@ and (min-width : 1367px) {
     text-align: center;
   }
 
+  img {
+    max-width:100%;
+  }
+
   .content {
     padding: 1em 16em 5em 16em;
     h1 {
       text-align: center;
       line-height: 1.5em;
+
+      .page-header-message {
+        color: $red-color;
+        padding-top: 2.5em;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .home-page {
+        font-size: 1.2em;
+        width: 100%;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .left {
+        	width: 48%;
+        	height: auto;
+          padding-top: 1em;
+          padding-top: 3em;
+        }
+
+        .right {
+          width: 48%;
+        	height: auto;
+          padding-top: 1.5em;
+        }
+      }
     }
   }
-
-  .content .home-page {
-    font-size: 1.2em;
-    width: 100%;
-    display: flex;
-    -webkit-flex-direction: row;
-     flex-direction: row;
-     justify-content: space-between;
-  }
-
-  .content .home-page .left {
-  	width: 48%;
-  	height: auto;
-    padding-top: 1em;
-    // padding-top: 4.5em;
-  }
-
-  .content .home-page .right {
-    width: 48%;
-  	height: auto;
-    padding-top: 1.5em;
-  }
-
-  img {
-    max-width:100%;
-  }
-
-  .page-header-message {
-    color: $red-color;
-    padding-top: 2.5em;
-    text-align: center;
-    font-weight: bold;
-  }
-
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen
+and (min-width : 1700px) {
+  .content {
+    padding-top: 2em;
 
-  .schedule-page   {
-    padding: 1em 0.5em;
-    margin: 0;
-  }
-
-  .schedule {
-    width: 100%;
-    margin: auto auto 2em auto;
-    border-color: white;
-    font-size: 0.8em;
-  }
-
-  .schedule-page .header-message h1 {
-    font-size: 0.9em;
-    color: $red-color;
-  }
-
-  .schedule-page  h2 {
-    font-size: 0.9em;
-    color: $red-color;
-  }
-
-  .schedule th {
-    text-align: left;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  .schedule th h3, h4 {
-    color: $red-color;
-    border-bottom: 1px solid;
-  }
-
-  .schedule h3 {
-    font-size: 0.7em;
-    font-weight: bold;
-  }
-
-  .schedule tbody td:first-child {
-    text-align: center;
-  }
-
-  .schedule tr td:first-child {
-    font-weight: bold;
-    width: 15%;
-  }
-
-  .schedule td {
-    padding: 0.5em;
-  }
-
-  .schedule td strong {
-    text-transform: uppercase;
+    #home-page {
+      padding-top: 6em;
+      min-height: 0;
+    }
   }
 }

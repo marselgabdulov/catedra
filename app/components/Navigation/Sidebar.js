@@ -20,7 +20,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div className='navbar'>
+      <div id='navbar'>
         <nav role='navigation' className={this.props.status}>
           <ul>
             <li>
@@ -45,6 +45,12 @@ class Sidebar extends React.Component {
             <li>
               <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/photogallery'>
                 Галерея
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/sacramentum'>
+                Таинства
               </NavLink>
             </li>
           </ul>

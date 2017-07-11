@@ -7,13 +7,13 @@ class Home extends Component {
     return (
       <div>
         <div>
-          <h1 className='page-header'>
+          <h1 id='page-header'>
             Собор Непорочного Зачатия<br/> Пресвятой Девы Марии
           </h1>
           <br/>
 
         </div>
-      <section className='home-page'>
+      <section id='home-page'>
 
         <div className='left'>
           <img src={Sobor} alt="Sobor" className='sobor-img'/>
