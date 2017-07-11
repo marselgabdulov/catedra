@@ -31,9 +31,6 @@ class App extends React.Component {
                 return <p>Not Found</p>
               } } />
           </Switch>
-            {/* <section className='advert-side'>
-              <h3>Рекламный блок</h3>
-            </section> */}
           </div>
           <Footer />
         </div>
