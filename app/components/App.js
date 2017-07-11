@@ -6,6 +6,7 @@ import Contacts from './Contacts';
 import Schedule from './Schedule';
 import Requisites from './Requisites';
 import PhotoGallery from './PhotoGallery';
+import Calendar from './Calendar';
 
 
 import Navigation from './Navigation/Navigation';
@@ -24,6 +25,7 @@ class App extends React.Component {
               <Route exact path='/contacts' component={Contacts} />
               <Route exact path='/schedule' component={Schedule} />
               <Route exact path='/requisites' component={Requisites} />
+              <Route exact path='/calendar' component={Calendar} />
               <Route exact path='/photogallery' component={PhotoGallery} />
               <Route render={function () {
                 return <p>Not Found</p>

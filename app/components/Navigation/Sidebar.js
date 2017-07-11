@@ -24,9 +24,6 @@ class Sidebar extends React.Component {
         <nav role='navigation' className={this.props.status}>
           <ul>
             <li>
-              <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/'>
-                Главная
-              </NavLink>
             </li>
             <li>
               <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/contacts'>
@@ -34,10 +31,11 @@ class Sidebar extends React.Component {
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/requisites'>
-                Реквизиты
+              <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/calendar'>
+                Календарь
               </NavLink>
             </li>
+
             <li>
               <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/schedule'>
                 Расписание богослужений

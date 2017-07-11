@@ -1,7 +1,7 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
 $red-color: #D0022B;
-$link-color: #1F5768;
+$link-color: #868986;
 $secondary-background: #f2f2f2;
 $footer-color: #fcfcfc;
 
@@ -10,9 +10,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Lora',serif;
-  font-size: 1.05em;
-  line-height: 1.4em;
+  font-family: 'PT Serif', serif;
+  // font-family: 'Lora',serif;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 button:hover {
@@ -99,7 +100,6 @@ h1 {
   flex-wrap: no-wrap;
   align-content: center;
   background-color: $red-color;
-  /*background: transparent;*/
   width: 12.75em;
   height: 60px;
   z-index: 500;
@@ -123,7 +123,7 @@ h1 {
 
 .home-link h2 {
   font-family: Tahoma, sans-serif;
-  padding-right: 1.45em;
+  padding-right: 0em;
   width: 100%;
   font-size: 2rem;
 }
@@ -163,11 +163,12 @@ h1 {
 /*-----CONTENT----------*/
 
 .content {
-  min-height: 90vh;
+  // min-height: 75vh;
   padding: 4em 5em 5em 5em;
   h1 {
     text-align: center;
   }
+
 }
 
 .page-header {
@@ -177,9 +178,18 @@ h1 {
 .content .home-page {
   width: 100%;
   display: flex;
+  min-height: 70vh;
   -webkit-flex-direction: row;
    flex-direction: row;
    justify-content: space-around;
+
+   a {
+     color: $red-color;
+   }
+
+   a:hover {
+     opacity: 0.6;
+   }
 }
 
 .content .home-page .left {
@@ -214,6 +224,10 @@ img {
   h1, h2, h3, h4 {
     color: $red-color;
   }
+
+  font-size: 0.9em;
+
+  margin: 0 5em;
 }
 
 .schedule {
@@ -271,6 +285,20 @@ img {
   text-transform: uppercase;
 }
 
+/*----calendar-page-----*/
+.calendar-page {
+  padding-top: 3em;
+
+  #calendar {
+    border-width:0;
+    width: 100%;
+    height:75vh;
+    frameborder:0;
+    scrolling: "no";
+  }
+}
+
+
 /*-----FOOTER-----------*/
 
 footer {
@@ -314,17 +342,42 @@ footer {
 
 /*-----MEDIA------------*/
 
+@media only screen and (max-width : 414px) {
+  .header {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: no-wrap;
+
+  }
+
+  .content {
+    padding: 3.5em 0.5em  0.5em 0.5em;
+  }
+
+}
+
 /* Смартфоны (портретный режим) ----------- */
 @media only screen
 and (max-width : 768px) {
 
   h1 {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
   }
 
+  .header {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: no-wrap;
+  }
+
   .content {
-    padding: 3.5em 0.5em  0.5em 0.5em;
+      padding: 4em 0.5em  0.5em 0.5em;
+
 
     .home-page {
       width: 100%;
@@ -359,7 +412,7 @@ and (max-width : 1024px) {
   }
 
   .content {
-    padding: 3.5em 0.5em  0.5em 0.5em;
+    padding: 2em 4em  2em 2em;
 
     .home-page {
       width: 100%;
@@ -371,7 +424,7 @@ and (max-width : 1024px) {
       .left {
        	width: 42%;
        	height: auto;
-        padding-top: 5em;
+
       }
 
       .right {
@@ -396,7 +449,7 @@ and (max-width : 1366px) {
   }
 
   .content {
-    padding: 3.5em 5em  5em 5em;
+    padding: 1em 5em  5em 5em;
 
     .home-page {
       width: 100%;
@@ -408,6 +461,7 @@ and (max-width : 1366px) {
       .left {
        	width: 46%;
        	height: auto;
+        // padding-top: 2.5em;
       }
 
       .right {
@@ -430,7 +484,7 @@ and (min-width : 1367px) {
   }
 
   .content {
-    padding: 4em 16em 5em 16em;
+    padding: 1em 16em 5em 16em;
     h1 {
       text-align: center;
       line-height: 1.5em;
@@ -476,8 +530,8 @@ and (min-width : 1367px) {
 
   .schedule-page   {
     padding: 1em 0.5em;
+    margin: 0;
   }
-
 
   .schedule {
     width: 100%;
