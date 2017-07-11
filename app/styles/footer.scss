@@ -1,0 +1,73 @@
+$link-color: #868986;
+$footer-color: #fcfcfc;
+
+footer {
+  text-transform: uppercase;
+  padding: 2em 6em 0em 0em;
+  min-height: 100px;
+  font-size: 0.65em;
+
+  a {
+    color: $link-color;
+  }
+
+  background: $footer-color;
+
+  display: flex;
+  flex-directions: row;
+  justify-content: spase-around;
+
+  .contact-info {
+    width: 25%;
+    text-align: right;
+  }
+
+  .address {
+    width: 25%;
+    text-align: right;
+  }
+
+  .partners {
+    width: 25%;
+    text-align: right;
+  }
+
+  .partners-2 {
+    width: 25%;
+    text-align: right;
+  }
+
+}
+
+/*-----MEDIA------------*/
+
+@media only screen and (max-width: 768px) {
+
+  footer {
+    font-size: 0.5em;
+    flex-direction: column;
+    padding: 0;
+
+    .contact-info {
+      width: 100%;
+      text-align: center;
+    }
+
+    .address {
+      width: 100%;
+      text-align: center;
+
+      .literal {
+        display: none;
+      }
+    }
+
+    .partners {
+      display:none;
+    }
+
+    .partners-2 {
+      display:none;
+    }
+  }
+}
