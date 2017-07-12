@@ -5,6 +5,7 @@
 @import "./footer.scss";
 @import "./calendar.scss";
 @import "./sacramentum.scss";
+@import "./contacts.scss";
 
 
 $red-color: #D0022B;
@@ -68,28 +69,28 @@ h1 {
     opacity: 0.6;
   }
 
-  #home-page {
-    width: 100%;
-    display: flex;
-    min-height: 70vh;
-    -webkit-flex-direction: row;
-     flex-direction: row;
-     justify-content: space-around;
-
-     .left {
-     	 width: 42%;
-     	 height: auto;
-       padding-top: 1em;
-     }
-
-     .right {
-       width: 48%;
-     	 height: auto;
-     }
-  }
-
-
 }
+
+#home-page {
+  width: 100%;
+  display: flex;
+  // min-height: 70vh;
+  -webkit-flex-direction: row;
+   flex-direction: row;
+   justify-content: space-around;
+
+   .left {
+     width: 42%;
+     height: auto;
+     padding-top: 1em;
+   }
+
+   .right {
+     width: 48%;
+     height: auto;
+   }
+}
+
 
 /*-----MEDIA------------*/
 
@@ -149,7 +150,7 @@ and (max-width : 1024px) {
   }
 
   .content {
-    padding: 2em 4em  2em 2em;
+    padding: 3em 4em  2em 2em;
 
     #home-page {
       width: 100%;
@@ -186,7 +187,7 @@ and (max-width : 1366px) {
   }
 
   .content {
-    padding: 1em 5em  5em 5em;
+    padding: 0em 5em  5em 5em;
 
     #home-page {
       width: 100%;

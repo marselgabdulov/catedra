@@ -17,7 +17,9 @@ class Sacramentum extends React.Component {
           <p className='header-message'>
             <i>Семь таинств касаются всех этапов, всех важных моментов жизни христианина: они дают рождение и возрастание, исцеление и миссию христианской жизни в вере. </i>
           </p>
-
+          <br/>
+          <br/>
+          <br/>
           <section className="text-section">
             <h2>Крещение</h2>
             <img className="vertical-img" src={Baptism} alt=""/>

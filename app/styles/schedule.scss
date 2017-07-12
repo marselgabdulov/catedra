@@ -4,6 +4,7 @@ $red-color: #D0022B;
 
   h1, h2, h3, h4 {
     color: $red-color;
+    text-transform: uppercase;
   }
 
   font-size: 0.9em;
@@ -82,30 +83,34 @@ $red-color: #D0022B;
         font-weight: bold;
       }
 
+      tbody td {
+        border-bottom: 1px solid grey;
+      }
+
+      tbody td:first-child {
+        text-align: center;
+      }
+
+      tr td:first-child {
+        font-weight: bold;
+        width: 15%;
+      }
+
+      td {
+        padding: 0.5em;
+      }
+
+      td strong {
+        text-transform: uppercase;
+      }
+
+
     }
 
     .header-message h1 {
       font-size: 0.9em;
       color: $red-color;
     }
-
-    tbody td:first-child {
-      text-align: center;
-    }
-
-    tr td:first-child {
-      font-weight: bold;
-      width: 15%;
-    }
-
-    td {
-      padding: 0.5em;
-    }
-
-    td strong {
-      text-transform: uppercase;
-    }
-
   }
 }
 

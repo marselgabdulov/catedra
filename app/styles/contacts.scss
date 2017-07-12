@@ -1,0 +1,88 @@
+#contact-page {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 11%;
+  width: 78%;
+  height: auto;
+
+  .purple {
+    color: #b20a80;
+  }
+
+  .brown {
+    color: #bf613f;
+  }
+
+  .card-background {
+    width: 100%;
+    background: url("../images/map.jpg");
+  }
+
+  .card {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    opacity: 0.8;
+    margin: 10% 30% 20% 30%;
+    padding: 15px;
+
+    a {
+      font-weight: 550;
+    }
+
+  }
+
+  #main-contact {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+     flex-direction: row;
+     justify-content: space-around;
+
+     .left {
+       width: 48%;
+       height: auto;
+     }
+
+     .right {
+       width: 48%;
+       height: auto;
+     }
+  }
+
+  @media only screen
+  and (max-width : 768px) {
+
+    margin: 0 0 0 0;
+    width: 100%;
+
+    .card-background {
+      background-image:none;
+    }
+
+
+    .card {
+      font-size: 0.9em;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+  #main-contact {
+    width: 100%;
+    flex-direction: column;
+
+    .left, .right {
+      width: 100%;
+    }
+  }
+}
+}
