@@ -10,6 +10,9 @@ import Calendar from './Calendar';
 import Sacramentum from './Sacramentum';
 import Ministrant from './Ministrant';
 
+import Parish from './Parish';
+
+
 import Navigation from './Navigation/Navigation';
 import Footer from './Footer';
 
@@ -28,6 +31,7 @@ class App extends React.Component {
               <Route exact path='/requisites' component={Requisites} />
               <Route exact path='/calendar' component={Calendar} />
               <Route exact path='/photogallery' component={PhotoGallery} />
+              <Route exact path='/parish' component={Parish} />
               <Route exact path='/sacramentum' component={Sacramentum} />
               <Route exact path='/ministrant' component={Ministrant} />
               <Route render={function () {
