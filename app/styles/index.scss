@@ -4,7 +4,7 @@
 @import "./schedule.scss";
 @import "./footer.scss";
 @import "./calendar.scss";
-@import "./sacramentum.scss";
+@import "./ordinary.scss";
 @import "./contacts.scss";
 
 
@@ -48,10 +48,6 @@ h1 {
   // margin-bottom: 5em;
   min-height: 100%;
   padding: 4em 5em 5em 5em;
-
-  .text-section {
-    margin-bottom: 4em;
-  }
 
   h1 {
     text-align: center;

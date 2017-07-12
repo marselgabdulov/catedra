@@ -1,17 +1,24 @@
-#sacramentum-page {
+.ordinary-page {
   margin: 0 5em;
   padding: 0 4em;
 
-
-  h2 {
-    text-align: center;
+  .text-section {
+    margin-bottom: 4em;
   }
 
-  .header-message {
-    text-align: right;
+  .image-wrapper {
+    text-align: justify;
+    width: 40%;
+    float: left;
+    height:auto;
+    margin: 0 20px 20px 0;
+
+    .img {
+      display: block;
+    }
   }
 
-  .vertical-img {
+  .vertical-img{
     float: left;
     width: 40%;
     height:auto;
@@ -40,6 +47,20 @@
     margin: 0 20px 20px 0;
   }
 
+  .sign {
+    font-size: 0.7em;
+  }
+
+
+  h2 {
+    text-align: center;
+  }
+
+  .header-message {
+    text-align: right;
+  }
+
+
   .text-wrapper {
     text-align: justify;
     text-indent: 2em;
@@ -51,7 +72,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #sacramentum-page {
+  .ordinary-page {
     margin: 0 0em;
     padding: 0 0em;
 
@@ -60,7 +81,7 @@
       color: $red-color;
     }
 
-    .vertical-img, .horisontal-img, .vertical-img-right, .horisontal-img-left {
+    .image-wrapper, .vertical-img, .horisontal-img, .vertical-img-right, .horisontal-img-left {
       width: 100%;
     }
   }

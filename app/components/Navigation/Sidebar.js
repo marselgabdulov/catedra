@@ -52,6 +52,12 @@ class Sidebar extends React.Component {
                   Таинства
                 </NavLink>
               </li>
+
+              <li>
+                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/ministrant'>
+                  Министранты
+                </NavLink>
+              </li>
             </ul>
             <div className='social-links'>
               <SocialLink url='https://www.facebook.com/catedra.ru' imageName='facebook-logo-round-red.svg' alt='Facebook' />
