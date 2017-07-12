@@ -55,6 +55,11 @@
     margin: 0 0em;
     padding: 0 0em;
 
+    h2 {
+      font-size: 1.12em;
+      color: $red-color;
+    }
+
     .vertical-img, .horisontal-img {
       width: 100%;
     }

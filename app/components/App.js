@@ -7,10 +7,7 @@ import Schedule from './Schedule';
 import Requisites from './Requisites';
 import PhotoGallery from './PhotoGallery';
 import Calendar from './Calendar';
-
 import Sacramentum from './Sacramentum';
-
-
 import Navigation from './Navigation/Navigation';
 import Footer from './Footer';
 

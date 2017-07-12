@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       status: 'hidden'
     }
@@ -26,8 +26,8 @@ class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <div className='header'>
-          <MenuButton status={this.state.status} action={this.handler} />
+        <div id='header'>
+          <MenuButton status={this.state.status} action={this.handler} id="menu-button" />
           <Header />
         </div>
         <Sidebar status={this.state.status} />
