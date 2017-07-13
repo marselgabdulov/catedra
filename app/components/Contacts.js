@@ -4,6 +4,9 @@ import Youtube from './Youtube';
 // import Map from '../images/map-croped.jpg';
 
 class Contacts extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div>

@@ -3,6 +3,10 @@ import Sobor from '../images/sobor_draw.jpg';
 const NavLink = require('react-router-dom').NavLink;
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <div>

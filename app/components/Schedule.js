@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
 class Schedule extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <section id='schedule-page'>
