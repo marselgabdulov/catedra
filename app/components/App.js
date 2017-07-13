@@ -26,7 +26,6 @@ class App extends React.Component {
               <Route exact path='/' component={Home} />
               <Route exact path='/contacts' component={Contacts} />
               <Route exact path='/schedule' component={Schedule} />
-              <Route exact path='/requisites' component={Requisites} />
               <Route exact path='/calendar' component={Calendar} />
               <Route exact path='/photogallery' component={PhotoGallery} />
               <Route exact path='/parish' component={Parish} />

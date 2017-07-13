@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import YandexMap from './YandexMap';
 import Youtube from './Youtube';
-import Map from '../images/map.jpg';
+// import Map from '../images/map-croped.jpg';
 
 class Contacts extends Component {
   render() {

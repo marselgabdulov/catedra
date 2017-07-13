@@ -18,7 +18,8 @@
 
   .card-background {
     width: 100%;
-    background: url("../images/map.jpg");
+    background: url("../images/map.png");
+    height: auto;
   }
 
   .card {
@@ -28,8 +29,8 @@
     width: 300px;
     height: auto;
     background-color: white;
-    opacity: 0.8;
-    margin: 10% 30% 20% 30%;
+    opacity: 0.87;
+    margin: 14% 30% 20% 30%;
     padding: 15px;
 
     a {
