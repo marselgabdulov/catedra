@@ -2,6 +2,10 @@ import React from 'react';
 import MinistrantImg from '../images/ministrant.jpg';
 
 class Ministrant extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
   render() {
     return (
       <div>

@@ -21,22 +21,29 @@ class App extends React.Component {
     return (
       <div>
         <BrowserRouter>
+
         <div>
+
           <Navigation />
+
           <div className='content'>
             <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/contacts' component={Contacts} />
-              <Route exact path='/schedule' component={Schedule} />
-              <Route exact path='/requisites' component={Requisites} />
-              <Route exact path='/calendar' component={Calendar} />
-              <Route exact path='/photogallery' component={PhotoGallery} />
-              <Route exact path='/parish' component={Parish} />
-              <Route exact path='/sacramentum' component={Sacramentum} />
-              <Route exact path='/ministrant' component={Ministrant} />
-              <Route render={function () {
-                return <p>Not Found</p>
-              } } />
+                <Route exact path='/' component={Home} />
+
+                <Route exact path='/contacts' component={Contacts} />
+                <Route exact path='/schedule' component={Schedule} />
+                <Route exact path='/requisites' component={Requisites} />
+                <Route exact path='/calendar' component={Calendar} />
+                <Route exact path='/photogallery' component={PhotoGallery} />
+                <Route exact path='/parish' component={Parish} />
+                <Route path='/sacramentum' component={Sacramentum} />
+
+                  <Route exact path='/ministrant' component={Ministrant} />
+
+                <Route render={function () {
+                  return <p>Not Found</p>
+                } } />
+
           </Switch>
           </div>
           <Footer />

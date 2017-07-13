@@ -9,6 +9,10 @@ import Priesthood from '../images/sacramentum/priesthood.jpg';
 
 
 class Sacramentum extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <div>

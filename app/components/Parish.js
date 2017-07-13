@@ -1,11 +1,13 @@
 import React from 'react';
 const NavLink = require('react-router-dom').NavLink;
+import ParishImg from '../images/parish-1.jpg';
 
 class Parish extends React.Component {
   render() {
     return (
       <div className="ordinary-page">
         <h1>Приход</h1>
+          <img src={ParishImg} alt="Parish"/>
           <p>
             ТАИНСТВА - семь таинств касаются всех этапов, всех важных моментов жизни христианина: они дают рождение и возрастание, исцеление и миссию христианской жизни в вере. <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/sacramentum'>Подробнее...</NavLink>
           </p>
