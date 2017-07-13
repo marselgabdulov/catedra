@@ -1,4 +1,6 @@
 import React from 'react';
+const NavLink = require('react-router-dom').NavLink;
+
 import Baptism from '../images/sacramentum/baptism.jpg';
 import Marriage from '../images/sacramentum/marriage.jpg';
 import Christmation from '../images/sacramentum/сhrismation.jpg';
@@ -12,7 +14,7 @@ class Sacramentum extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
-  
+
   render() {
     return (
       <div>
@@ -53,7 +55,9 @@ class Sacramentum extends React.Component {
               <li>в день крещения необходимо прийти за 15 минут до назначенного времени для заполнения церковных документов (церковной книги). При себе нужно иметь свидетельство о рождении ребенка и документы, удостоверяющие личность ребёнка, родителей и крестных.</li>
               <li>фотосъемка разрешается, при условии, что она не будет мешать проведению крещения.</li>
               <li>Таинство совершается за пожертвование в любом размере.</li>
-              <li>Если крещение желает принять взрослый, необходимо сначала прослушать курс катехизации. При опасности смерти Крещение уделяется безусловно. Подробнее о курсах катехизации см. соответствующий раздел.</li>
+              <li>Если крещение желает принять взрослый, необходимо сначала прослушать курс катехизации. При опасности смерти Крещение уделяется безусловно. Подробнее о курсах <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/catechesis'>
+                катехизации...
+              </NavLink></li>
             </ul>
           </section>
 
