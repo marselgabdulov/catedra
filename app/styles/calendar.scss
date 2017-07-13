@@ -1,5 +1,5 @@
 #calendar-page {
-  padding-top: 3em;
+  margin: 5em 7em;
 
   #calendar {
     border-width:0;
@@ -7,5 +7,14 @@
     min-height:75vh;
     frameborder:0;
     scrolling: "no";
+  }
+
+
+}
+
+@media only screen
+and (max-width : 768px) {
+  #calendar-page {
+    margin: 0.5em;
   }
 }
