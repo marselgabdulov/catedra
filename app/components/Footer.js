@@ -6,16 +6,16 @@ class Footer extends Component {
     return (
       <footer>
         <div className='contact-info'>
-          <div>
-            <a href='mailto:catedra.moscow@gmail.com'>catedra.moscow@gmail.com</a><br/>
-            <a href='tel:+74992523911'>+7 499 252-39-11</a><br/>
-            <a href='tel:+74992524051'>+7 499 252-40-51</a>
-          </div>
+          <p>
+            catedra.moscow@gmail.com<br/>
+            +7 499 252-39-11 <br/>
+            +7 499 252-40-51
+          </p>
         </div>
 
         <div className='address'>
           <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/contacts'>
-            карта проезда
+            контакты
           </NavLink>
           <div className="literal">
           Малая Грузинская д.27/13<br/>
