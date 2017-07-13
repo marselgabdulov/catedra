@@ -6,7 +6,7 @@
 @import "./calendar.scss";
 @import "./ordinary.scss";
 @import "./contacts.scss";
-
+@import "./home.scss";
 
 $red-color: #D0022B;
 $link-color: #868986;
@@ -47,7 +47,7 @@ h1 {
 .content {
   // margin-bottom: 5em;
   min-height: 100%;
-  padding: 4em 5em 5em 5em;
+  padding: 0em 5em 5em 5em;
 
   h1 {
     text-align: center;
@@ -67,25 +67,6 @@ h1 {
 
 }
 
-#home-page {
-  width: 100%;
-  display: flex;
-  // min-height: 70vh;
-  -webkit-flex-direction: row;
-   flex-direction: row;
-   justify-content: space-around;
-
-   .left {
-     width: 42%;
-     height: auto;
-     padding-top: 1em;
-   }
-
-   .right {
-     width: 48%;
-     height: auto;
-   }
-}
 
 
 /*-----MEDIA------------*/
@@ -113,25 +94,7 @@ and (max-width : 768px) {
       margin-bottom: 1em;
     }
 
-    #home-page {
-      width: 100%;
-      display: flex;
-      -webkit-flex-direction: column;
-      flex-direction: column;
-      align-content: center;
 
-      .left {
-       	width: 100%;
-       	height: auto;
-        padding-top: 1em;
-      }
-
-      .right {
-        width: 100%;
-       	height: auto;
-        text-align: justify;
-      }
-    }
   }
 
 }
@@ -146,27 +109,9 @@ and (max-width : 1024px) {
   }
 
   .content {
-    padding: 3em 4em  2em 2em;
+    padding: 0em 4em  2em 2em;
 
-    #home-page {
-      width: 100%;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      justify-content: space-around;
 
-      .left {
-       	width: 42%;
-       	height: auto;
-        padding-top: 6em;
-      }
-
-      .right {
-        width: 52%;
-       	height: auto;
-        text-align: left;
-      }
-    }
   }
 }
 
@@ -185,25 +130,6 @@ and (max-width : 1366px) {
   .content {
     padding: 0em 5em  5em 5em;
 
-    #home-page {
-      width: 100%;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      justify-content: space-around;
-
-      .left {
-       	width: 46%;
-       	height: auto;
-      }
-
-      .right {
-        width: 46%;
-       	height: auto;
-        text-align: left;
-
-      }
-    }
   }
 }
 
@@ -223,7 +149,7 @@ and (min-width : 1367px) {
   }
 
   .content {
-    padding: 1em 16em 5em 16em;
+    padding: 0em 16em 5em 16em;
     h1 {
       text-align: center;
       line-height: 1.5em;
@@ -235,27 +161,7 @@ and (min-width : 1367px) {
         font-weight: bold;
       }
 
-      .home-page {
-        font-size: 1.2em;
-        width: 100%;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        justify-content: space-between;
 
-        .left {
-        	width: 48%;
-        	height: auto;
-          padding-top: 1em;
-          padding-top: 3em;
-        }
-
-        .right {
-          width: 48%;
-        	height: auto;
-          padding-top: 1.5em;
-        }
-      }
     }
   }
 }
@@ -264,15 +170,11 @@ and (min-width : 1367px) {
 and (min-width : 1700px) {
 
   .content {
-    padding-top: 2em;
+    padding-top: 0em;
 
     .text-section {
       margin-bottom: 6em;
     }
 
-    #home-page {
-      padding-top: 6em;
-      min-height: 0;
-    }
   }
 }
