@@ -3,12 +3,12 @@ $footer-color: #fcfcfc;
 
 footer {
   position: relative;
-  text-transform: uppercase;
   padding-right: 5em;
-  font-size: 0.65em;
+  font-size: 0.9em;
 
   a {
     color: $link-color;
+    text-transform: uppercase;
   }
 
   background: $footer-color;
