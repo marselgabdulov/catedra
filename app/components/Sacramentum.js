@@ -156,6 +156,15 @@ class Sacramentum extends React.Component {
             <p className="text-wrapper">
               Желающий посвятиться такому служению должен связаться со своим Настоятелем чтобы обсудить смысл такова выбора и узнать как поступать дальше.
             </p>
+            <p className="back-forvard-links">
+              <NavLink exact activeClassName='active' to='/parish'>
+                -- Приход &nbsp; &nbsp;
+              </NavLink>
+
+              <NavLink exact activeClassName='active' to='/catechesis'>
+                 Катехизация --
+              </NavLink>
+            </p>
           </section>
         </div>
       </div>

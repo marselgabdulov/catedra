@@ -1,4 +1,7 @@
 import React from 'react';
+
+const NavLink = require('react-router-dom').NavLink;
+
 import Comunione_e_liberazione from '../images/comunione_e_liberazione.jpg'
 import Ikona from '../images/Icona_maria_kiko.jpg';
 import Bosco from '../images/donbosco.png';
@@ -111,9 +114,21 @@ class Organisations extends React.Component {
 
           <a href="http://www.camminoneocatecumenale.it/" target="_blank">Международный сайт движения</a>
         </section>
+
+        <p className="back-forvard-links">
+          <NavLink exact activeClassName='active' to='/parish'>
+            -- Приход &nbsp; &nbsp;
+          </NavLink>
+
+          <NavLink exact activeClassName='active' to='/congregations'>
+            Конгрегации &nbsp; &nbsp;
+          </NavLink>
+
+          <NavLink exact activeClassName='active' to='/praygroups'>
+             Молитвенные группы --
+          </NavLink>
+        </p>
       </div>
-
-
     )
   }
 }

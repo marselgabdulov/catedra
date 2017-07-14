@@ -1,5 +1,7 @@
 import React from 'react';
 
+const NavLink = require('react-router-dom').NavLink;
+
 class Congregations extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
@@ -47,6 +49,20 @@ class Congregations extends React.Component {
           <a href="http://www.ofmconv.net/?lang=en" target="_blank">Официальный сайт францисканцев — Ордена Меньших Братьев Конвентуальных</a><br/>
           <a href="https://ofm.org/" target="_blank">Официальный сайт францисканцев — Ордена Меньших Братьев</a><br/>
           <a href="http://www.francis.ru/index.php/ru/" target="_blank">Русскоязычный сайт</a><br/>
+        </p>
+
+        <p className="back-forvard-links">
+          <NavLink exact activeClassName='active' to='/parish'>
+            -- Приход &nbsp; &nbsp;
+          </NavLink>
+
+          <NavLink exact activeClassName='active' to='/organisations'>
+            Движения &nbsp; &nbsp;
+          </NavLink>
+
+          <NavLink exact activeClassName='active' to='/praygroups'>
+             Молитвенные группы --
+          </NavLink>
         </p>
       </div>
     )

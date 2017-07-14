@@ -1,5 +1,6 @@
 import React from 'react';
 import MinistrantImg from '../images/ministrant.jpg';
+const NavLink = require('react-router-dom').NavLink;
 
 class Ministrant extends React.Component {
   componentDidMount() {
@@ -53,8 +54,19 @@ class Ministrant extends React.Component {
             </p>
 
             <p className="text-wrapper"><b>Если ты хочешь стать министрантом - обратись к о.Аркадию по телефону <a href="tel:+79261805786">+7(926)180-57-86</a></b></p>
+
+            <p className="back-forvard-links">
+              <NavLink exact activeClassName='active' to='/parish'>
+                -- Приход &nbsp; &nbsp;
+              </NavLink>
+
+              <NavLink exact activeClassName='active' to='/catechesis'>
+                 Катехизация --
+              </NavLink>
+            </p>
           </section>
         </div>
+
       </div>
     )
   }

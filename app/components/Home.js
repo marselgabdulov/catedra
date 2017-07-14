@@ -6,7 +6,7 @@ class Home extends Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
-  
+
   render() {
     return (
       <div>
@@ -32,7 +32,7 @@ class Home extends Component {
             В соборе служат мессы на русском, польском, корейском, английском, французском, испанском языках, латыни, а также тридентские мессы и мессы по армянскому обряду. Кроме того, проводятся встречи молодёжи, курсы катехизации, благотворительные концерты органной, церковной и классической музыки. При соборе есть библиотека и церковная лавка, офис регионального отделения «Каритас» и благотворительный фонд «Искусство добра».
           </p>
           <p>
-            <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/contacts'>
+            <NavLink exact activeClassName='active' to='/contacts'>
                Контакты
             </NavLink>
           </p>

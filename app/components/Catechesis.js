@@ -1,6 +1,8 @@
 import React from 'react';
 import CatechesisImg from '../images/catechesis.jpg';
 
+const NavLink = require('react-router-dom').NavLink;
+
 class Catechesis extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
@@ -78,6 +80,16 @@ class Catechesis extends React.Component {
           </p>
 
           <a href="https://www.youtube.com/watch?v=5CRfDBT62aA" target="_blank"><h3>Трехминутный катехезис</h3></a>
+
+          <p className="back-forvard-links">
+            <NavLink exact activeClassName='active' to='/parish'>
+              -- Приход &nbsp; &nbsp;
+            </NavLink>
+
+            <NavLink exact activeClassName='active' to='/ministrant'>
+               Министрант --
+            </NavLink>
+          </p>
       </div>
     )
   }
