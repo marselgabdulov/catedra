@@ -13,6 +13,7 @@ import Congregations from './Congregations';
 import PrayerGroups from './PrayerGroups';
 import Organisations from './Organisations';
 import Rules from './Rules';
+import Enlightenment from './Enlightenment';
 
 import Parish from './Parish';
 
@@ -41,6 +42,7 @@ class App extends React.Component {
               <Route exact path='/prayergroups' component={PrayerGroups} />
               <Route exact path='/organisations' component={Organisations} />
               <Route exact path='/rules' component={Rules} />
+              <Route exact path='/enlightenment' component={Enlightenment} />
               <Route render={function () {
                 return <p>Not Found</p>
               } } />

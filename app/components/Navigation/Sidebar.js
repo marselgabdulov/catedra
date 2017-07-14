@@ -54,6 +54,12 @@ class Sidebar extends React.Component {
               </li>
 
               <li>
+                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/enlightenment'>
+                  Культура и образование
+                </NavLink>
+              </li>
+
+              <li>
                 <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/photogallery'>
                   Галерея
                 </NavLink>
