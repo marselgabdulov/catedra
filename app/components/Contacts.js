@@ -14,6 +14,7 @@ class Contacts extends Component {
           <div className="card-background">
             <div className="card">
               <p>
+                123557 Москва <br/>
                 улица Малая Грузинская 27/13 <br/>
                 понедельник - воскресенье <br/>
                 8:00 - 12:45 | 15:30 - 20:00
@@ -24,25 +25,51 @@ class Contacts extends Component {
 
           <div id="main-contact">
             <div className="left">
-              <h3>Контакты</h3>
-              <p>123557, Москва, ул. Малая Грузинская, д. 27/13</p>
-              <p>Ближайшие станции метро: <br/>
-              <span className="purple">Баррикадная</span>,<br/>
-              <span className="brown">Краснопресненская</span>,<br/>
-              <span className="purple">Улица 1905  года</span>,<br/>
-              <span className="brown">Белорусская</span>.
+
+              <p>
+                <b>Экскурсии</b><br/>
+                Бесплатные экскурсии по кафедральному собору проводятся по предварительной записи по вторникам, средам и пятницам во время, свободное от богослужений. Организацию экскурсий осуществляет фонд <a href="http://deboniarte.org/">Искусство добра</a>.
               </p>
+
+              <p><b>
+                Посещение собора посторонними экскурсионными группами также осуществляется только по предварительному согласованию.
+              </b></p>
+
+              <p>
+                Контакты: <br/>
+                с. Наталия Кабишева<br/>
+                <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
+                <a href="mailto:angelus@deboniarte.org">angelus@deboniarte.org </a>
+              </p>
+
+              <p>
+                <b>Журналистам</b><br/>
+                По вопросам съемок и интервью в соборе обращайтесь
+                к о. Кириллу Горбунову <br/>
+                <a href="tel:+74957855434">+7(495)785-54-34</a> <br/>
+                <a href="mailto:info@cathmos.ru">info@cathmos.ru</a>
+              </p>
+
+            </div>
+
+            <div className="right">
 
               <p>
                 <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
 
                 <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
 
-                <b>E-mail:</b> <a href="mailto:catedra.moscow@gmail.com">catedra.moscow@gmail.com</a>
+                <a href="mailto:catedra.moscow@gmail.com">catedra.moscow@gmail.com</a>
               </p>
-            </div>
 
-            <div className="right">
+              <p><b>Ближайшие станции метро:</b> <br/>
+                <span className="purple">Баррикадная</span>,<br/>
+                <span className="purple">Улица 1905  года</span>,<br/>
+                <span className="brown">Краснопресненская</span>,<br/>
+                <span className="brown">Белорусская</span>.
+              </p>
+
+
               <h3>Реквизиты</h3>
 
               <p>РО – Приход Непорочного Зачатия Пресвятой Девы Марии Римско-Католической Церкви в г. Москве</p>
