@@ -60,7 +60,7 @@ class Congregations extends React.Component {
             Движения &nbsp; &nbsp;
           </NavLink>
 
-          <NavLink exact activeClassName='active' to='/praygroups'>
+          <NavLink exact activeClassName='active' to='/prayergroups'>
              Молитвенные группы --
           </NavLink>
         </p>

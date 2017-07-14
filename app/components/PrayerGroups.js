@@ -2,6 +2,7 @@ import React from 'react';
 import LiveRosary from '../images/live_rosary.jpg';
 import Daisies from '../images/daisies.jpg';
 import Devider from '../images/Divider.png';
+const NavLink = require('react-router-dom').NavLink;
 
 class PrayerGroups extends React.Component {
   componentDidMount() {
@@ -74,6 +75,19 @@ class PrayerGroups extends React.Component {
             С любовью и молитвой,<br/>
             Ваши маргаритки<br/>
             <a href="tel:+79261805786">+7(926)180-57-86</a>
+          </p>
+          <p className="back-forvard-links">
+            <NavLink exact activeClassName='active' to='/parish'>
+              -- Приход &nbsp; &nbsp;
+            </NavLink>
+
+            <NavLink exact activeClassName='active' to='/organisations'>
+              Движения &nbsp; &nbsp;
+            </NavLink>
+
+            <NavLink exact activeClassName='active' to='/congregations'>
+               Конгрегации --
+            </NavLink>
           </p>
         </section>
       </div>
