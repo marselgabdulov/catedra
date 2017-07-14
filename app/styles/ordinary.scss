@@ -6,12 +6,34 @@
     margin-bottom: 4em;
   }
 
+  .page-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+    }
+  }
+
   .image-wrapper {
     text-align: justify;
     width: 40%;
     float: left;
     height:auto;
     margin: 0 20px 20px 0;
+
+    .img {
+      display: block;
+    }
+  }
+
+  .image-wrapper-right {
+    text-align: justify;
+    width: 40%;
+    float: right;
+    height:auto;
+    margin: 0 0 20px 20px;
 
     .img {
       display: block;
@@ -84,8 +106,14 @@
       color: $red-color;
     }
 
-    .image-wrapper, .vertical-img, .horisontal-img, .vertical-img-right, .horisontal-img-left {
+    .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
       width: 100%;
+    }
+
+    .page-devider {
+      img {
+        width: 100%;
+      }
     }
   }
 }

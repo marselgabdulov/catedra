@@ -3,6 +3,10 @@ const NavLink = require('react-router-dom').NavLink;
 import ParishImg from '../images/parish-1.jpg';
 
 class Parish extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  
   render() {
     return (
       <div className="ordinary-page">
@@ -26,7 +30,7 @@ class Parish extends React.Component {
 
         <p><NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/congregations'>ОРДЕНА И КОНГРЕГАЦИИ...</NavLink></p>
 
-        <p>МОЛИТВЕННЫЕ ГРУПП...</p>
+        <p><NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/prayergroups'>МОЛИТВЕННЫЕ ГРУППЫ...</NavLink></p>
 
         <p>ДВИЖЕНИЯ...</p>
 
