@@ -1,6 +1,10 @@
 import React from 'react';
 
 class Congregations extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
   render() {
     return(
       <div className="ordinary-page">
@@ -8,7 +12,7 @@ class Congregations extends React.Component {
         <p>
           <b>Салезиа́нцы Дона Боско, Общество св. Франциска Сальского или Салезианцы (лат. Societas Sancti Francisci Salesii, SDB)</b> — католическая монашеская конгрегация папского права, основанная св. Иоанном Боско 18 декабря 1859 года в Турине (Италия). Конгрегация названа в честь св. Франциска Сальского.
           Покровители конгрегации — Дева Мария Помощница Христиан, святой Франциск Сальский (чьим именем Дон Боско назвал эту конгрегацию и Салезианскую семью, и чью духовность воспринял), св. Иоанн Боско. &nbsp;
-          <a href="http://www.salesians.ru/index.html">Русскоязычный сайт</a>
+          <a href="http://www.salesians.ru/index.html" target="_blank">Русскоязычный сайт</a>
         </p>
 
         <p>
@@ -16,12 +20,12 @@ class Congregations extends React.Component {
           <br/>
           В нашем храме служат сестры: Малгожата Петрушчак, Тереса Матыя, Виолетта Врубель, Мария Тыль, Ирена, Тереса Шевц, Дорота, Габриела.
           &nbsp;
-          <a href="https://www.cgfmanet.org/default.aspx?lingua=2">Международный сайт</a>
+          <a href="https://www.cgfmanet.org/default.aspx?lingua=2" target="_blank">Международный сайт</a>
         </p>
 
         <p>
           <b>Салезианские сотрудники (Associazione Cooperatori Salesiani, ACS)</b> восходят к истокам апостольского проекта Дона Боско. С первых дней пребывания в Турине Дон Боско привлекал мужчин и женщин разного происхождения и из разных мест, для помощи бедным, брошенным мальчикам: Ораториям. Расширяя свою работу, он осознал необходимость объединения усилий сотрудников салезианской миссии (священников и мирян) и создания ассоциации для них.&nbsp;
-          <a href="http://www.laici.va/content/laici/en/sezioni/associazioni/repertorio/associazione-cooperatori-salesiani.html">Международный сайт</a>
+          <a href="http://www.laici.va/content/laici/en/sezioni/associazioni/repertorio/associazione-cooperatori-salesiani.html" target="_blank">Международный сайт</a>
         </p>
 
         <p>
@@ -32,7 +36,7 @@ class Congregations extends React.Component {
 
           На территории России Конгрегация появилась в 1991 году в Москве, где и поныне существует община сестер. Монахини этой Конгрегации работают в приходе в качестве катехизаторов, сотрудничают с организацией Каритас, несут свое служение, работая в светских учебных заведениях, занимаясь воспитанием, в особенности детей и молодых людей.&nbsp;
 
-          <a href="https://rscjinternational.org/">Международный сайт</a>
+          <a href="https://rscjinternational.org/" target="_blank">Международный сайт</a>
         </p>
 
         <p>
@@ -40,9 +44,9 @@ class Congregations extends React.Component {
           <br/>
 
 
-          <a href="http://www.ofmconv.net/?lang=en">Официальный сайт францисканцев — Ордена Меньших Братьев Конвентуальных</a><br/>
-          <a href="https://ofm.org/">Официальный сайт францисканцев — Ордена Меньших Братьев</a><br/>
-          <a href="http://www.francis.ru/index.php/ru/">Русскоязычный сайт</a><br/>
+          <a href="http://www.ofmconv.net/?lang=en" target="_blank">Официальный сайт францисканцев — Ордена Меньших Братьев Конвентуальных</a><br/>
+          <a href="https://ofm.org/" target="_blank">Официальный сайт францисканцев — Ордена Меньших Братьев</a><br/>
+          <a href="http://www.francis.ru/index.php/ru/" target="_blank">Русскоязычный сайт</a><br/>
         </p>
       </div>
     )
