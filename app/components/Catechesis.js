@@ -77,7 +77,7 @@ class Catechesis extends React.Component {
             Занятия проходят в каждую вторую и четвёртую субботу месяца в 10:00 в зале в цокольном этаже собора.
           </p>
 
-          <a href="https://www.youtube.com/watch?v=5CRfDBT62aA"><h3>Трехминутный катехезис</h3></a>
+          <a href="https://www.youtube.com/watch?v=5CRfDBT62aA" target="_blank"><h3>Трехминутный катехезис</h3></a>
       </div>
     )
   }
