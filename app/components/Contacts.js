@@ -31,9 +31,9 @@ class Contacts extends Component {
                 Бесплатные экскурсии по кафедральному собору проводятся по предварительной записи по вторникам, средам и пятницам во время, свободное от богослужений. Организацию экскурсий осуществляет фонд <a href="http://deboniarte.org/">Искусство добра</a>.
               </p>
 
-              <p><b>
+              <p>
                 Посещение собора посторонними экскурсионными группами также осуществляется только по предварительному согласованию.
-              </b></p>
+              </p>
 
               <p>
                 Контакты: <br/>
@@ -48,18 +48,24 @@ class Contacts extends Component {
                 к о. Кириллу Горбунову <br/>
                 <a href="tel:+74957855434">+7(495)785-54-34</a> <br/>
                 <a href="mailto:info@cathmos.ru">info@cathmos.ru</a>
-              </p>
+                <br/>
+                <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
 
+                <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
+
+              </p>
             </div>
 
             <div className="right">
 
               <p>
-                <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
 
-                <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
+                <a href="mailto:catedra.moscow@gmail.com" target="_blank">catedra.moscow@gmail.com</a>
+                <br/>
+                <a href="https://www.facebook.com/catedra.ru" className='social-group-link'>Группа в Facebook</a> <br/>
+                <a href="https://vk.com/catedra" target="_blank" className='social-group-link'>Группа в VK</a><br/>
+                <a href="https://www.youtube.com/watch?v=7nbaiaLmwKE" target="_blank">Видео 'Как пройти к собору'</a>
 
-                <a href="mailto:catedra.moscow@gmail.com">catedra.moscow@gmail.com</a>
               </p>
 
               <p><b>Ближайшие станции метро:</b> <br/>
@@ -69,7 +75,7 @@ class Contacts extends Component {
                 <span className="brown">Белорусская</span>.
               </p>
 
-
+              <br/>
               <h3>Реквизиты</h3>
 
               <p>РО – Приход Непорочного Зачатия Пресвятой Девы Марии Римско-Католической Церкви в г. Москве</p>
