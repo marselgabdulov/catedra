@@ -9,6 +9,7 @@ import Calendar from './Calendar';
 import Sacramentum from './Sacramentum';
 import Ministrant from './Ministrant';
 import Catechesis from './Catechesis';
+import Congregations from './Congregations';
 
 import Parish from './Parish';
 
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path='/sacramentum' component={Sacramentum} />
               <Route exact path='/ministrant' component={Ministrant} />
               <Route exact path='/catechesis' component={Catechesis} />
+              <Route exact path='/congregations' component={Congregations} />
               <Route render={function () {
                 return <p>Not Found</p>
               } } />

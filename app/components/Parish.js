@@ -24,7 +24,7 @@ class Parish extends React.Component {
           МИНИСТРАНТ - (лат. Ministrans, помощник, прислуживающий) - мирянин, помогающий священнику во время Мессы и других богослужений. <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/ministrant'>Подробнее...</NavLink>
         </p>
 
-        <p>ОРДЕНА И КОНГРЕГАЦИИ...</p>
+        <p><NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/congregations'>ОРДЕНА И КОНГРЕГАЦИИ...</NavLink></p>
 
         <p>МОЛИТВЕННЫЕ ГРУПП...</p>
 
