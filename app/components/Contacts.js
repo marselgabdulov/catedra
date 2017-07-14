@@ -27,10 +27,10 @@ class Contacts extends Component {
               <h3>Контакты</h3>
               <p>123557, Москва, ул. Малая Грузинская, д. 27/13</p>
               <p>Ближайшие станции метро: <br/>
-              <span className="purple">"Баррикадная"</span>,<br/>
-              <span className="brown">"Краснопресненская"</span>,<br/>
-              <span className="purple">"Улица 1905  года"</span>,<br/>
-              <span className="brown">"Белорусская"</span>.
+              <span className="purple">Баррикадная</span>,<br/>
+              <span className="brown">Краснопресненская</span>,<br/>
+              <span className="purple">Улица 1905  года</span>,<br/>
+              <span className="brown">Белорусская</span>.
               </p>
 
               <p>
