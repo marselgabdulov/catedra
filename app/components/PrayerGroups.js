@@ -39,7 +39,6 @@ class PrayerGroups extends React.Component {
           <img src={Devider} alt="---------------"/>
         </div>
         <br/>
-        <br/>
 
         <section className="text-section">
 

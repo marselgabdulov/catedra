@@ -6,7 +6,7 @@ class Parish extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
-  
+
   render() {
     return (
       <div className="ordinary-page">
@@ -32,7 +32,7 @@ class Parish extends React.Component {
 
         <p><NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/prayergroups'>МОЛИТВЕННЫЕ ГРУППЫ...</NavLink></p>
 
-        <p>ДВИЖЕНИЯ...</p>
+        <p><NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/organisations'>ДВИЖЕНИЯ...</NavLink></p>
 
         <h3>Дорогие братья и сестры! </h3>
         <p>
