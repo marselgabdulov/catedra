@@ -1,5 +1,5 @@
 import React from 'react';
-import Organ from '../images/organ.jpg';
+import Organ from '../images/organ-2.jpg';
 import Education from '../images/education.png';
 
 
@@ -7,7 +7,7 @@ class Enlightenment extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
-  
+
   render() {
     return (
       <div className="ordinary-page">
@@ -15,20 +15,18 @@ class Enlightenment extends React.Component {
 
         <section className="text-section">
           <h2>Музыка</h2>
-          <div className="image-wrapper">
+          <p className="text-wrapper">
+            <b>Литургическая музыка.</b> При соборе действует литургический приходской хор (занятия проходят по средам в 19.00 в хоровом классе в цокольном этаже), а также молодежная вокально-инструментальная группа.
+            Приглашаем всех желающих.
+          </p>
+
+          <div className="image-wrapper-right">
             <img className="img" src={Organ} alt="Organ"/>
+            <span className="sign"><i>Haarlem cathedral organ by muller. 1738 г.</i></span>
           </div>
 
-          <span className="text-wrapper">
-            <b>Литургическая музыка</b><br/>
-            При соборе действует литургический приходской хор (занятия проходят по средам в 19.00 в хоровом классе в цокольном этаже), а также молодежная вокально-инструментальная группа.
-            Приглашаем всех желающих.
-          </span>
-          <br/>
-          <br/>
-          <span className="text-wrapper">
-            <b>Концерты духовной музыки</b><br/>
-            Дорогие прихожане! <br/>
+          <p className="text-wrapper">
+            <b>Концерты духовной музыки.</b> Дорогие прихожане!
             При соборе действует литургический приходской хор (занятия проходят по средам в 19.00 в хоровом классе в цокольном этаже), а также молодежная вокально-инструментальная группа.
             Приглашаем всех желающих.
             <br/>
@@ -49,7 +47,7 @@ class Enlightenment extends React.Component {
             <br/>
             <br/>
             <a href="https://artbene.ru/">Афиша концертов</a>
-          </span>
+          </p>
         </section>
 
         <section className="text-section">
@@ -74,12 +72,12 @@ class Enlightenment extends React.Component {
 
         <section className="text-section">
           <h2>Экскурсии</h2>
-          <span><b>Бесплатные</b>экскурсии по кафедральному собору проводятся по предварительной записи по вторникам, средам и пятницам во время, свободное от богослужений. Организацию экскурсий осуществляет фонд <a href="http://deboniarte.org/">Искусство добра</a>.
-          </span>
+          <p><b>Бесплатные </b>экскурсии по кафедральному собору проводятся по предварительной записи по вторникам, средам и пятницам во время, свободное от богослужений. Организацию экскурсий осуществляет фонд <a href="http://deboniarte.org/">Искусство добра</a>.
+          </p>
 
-          <span>
+          <p>
             Посещение собора посторонними экскурсионными группами также осуществляется только по предварительному согласованию.
-          </span>
+          </p>
 
           Контакты: <br/>
           с. Наталия Кабишева <br/>
