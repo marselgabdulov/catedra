@@ -52,7 +52,6 @@ class Contacts extends Component {
                 <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
 
                 <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
-
               </p>
             </div>
 
@@ -62,17 +61,17 @@ class Contacts extends Component {
 
                 <a href="mailto:catedra.moscow@gmail.com" target="_blank">catedra.moscow@gmail.com</a>
                 <br/>
-                <a href="https://www.facebook.com/catedra.ru" className='social-group-link'>Группа в Facebook</a> <br/>
-                <a href="https://vk.com/catedra" target="_blank" className='social-group-link'>Группа в VK</a><br/>
+                <a href="https://www.facebook.com/catedra.ru">Группа в Facebook</a> <br/>
+                <a href="https://vk.com/catedra" target="_blank">Группа в VK</a><br/>
                 <a href="https://www.youtube.com/watch?v=7nbaiaLmwKE" target="_blank">Видео 'Как пройти к собору'</a>
 
               </p>
 
               <p><b>Ближайшие станции метро:</b> <br/>
-                <span className="purple">Баррикадная</span>,<br/>
-                <span className="purple">Улица 1905  года</span>,<br/>
-                <span className="brown">Краснопресненская</span>,<br/>
-                <span className="brown">Белорусская</span>.
+                <span>Баррикадная</span>,<br/>
+                <span>Улица 1905  года</span>,<br/>
+                <span>Краснопресненская</span>,<br/>
+                <span>Белорусская</span>.
               </p>
 
               <br/>
@@ -94,25 +93,3 @@ class Contacts extends Component {
 }
 
 export default Contacts;
-
-
-
-
-
-// <section className='main-content'>
-//   <div className='main-part'>
-//     <div className='contacts-info'>
-//       <p>123557,&nbsp;&nbsp;Москва,&nbsp;&nbsp;улица Малая Грузинская д.27/13</p>
-//       <p>Ближайшие станции метро: Баррикадная, &nbsp;&nbsp;Краснопресненская,&nbsp;&nbsp; Улица 1905 года, &nbsp;&nbsp;Белорусская</p>
-//       <p>Ризница:&nbsp; &nbsp;&nbsp;&nbsp;<a href='tel:+7-499-252-39-11'></a>+7 499 252-39-11</p>
-//       <p>Концерты: <a href='tel:+7-499-252-40-51'></a>+7 499 252-40-51</p>
-//       <p>email: <a href='mailto:catedra.moscow@gmail.com'>catedra.moscow@gmail.com</a></p>
-//     </div>
-//     <div className='yandex-map'>
-//       <YandexMap />
-//     </div>
-//     <div className='youtube'>
-//       <Youtube />
-//     </div>
-//   </div>
-// </section>
