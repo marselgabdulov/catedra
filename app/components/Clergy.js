@@ -2,7 +2,7 @@ import React from 'react';
 import Priest from '../images/priest-blank.jpg';
 import Nun from '../images/nun.jpg';
 
-import ClericCart from './ClericCart';
+import ClericCard from './ClericCard';
 
   class Clergy extends React.Component {
     componentDidMount() {
@@ -127,15 +127,15 @@ import ClericCart from './ClericCart';
       },
     ];
 
-    const clericCarts = clergy.map((cart) =>
-      <ClericCart key={cart.name} image={cart.image} name={cart.name} position={cart.position} />
+    const clericCards = clergy.map((card) =>
+      <ClericCard key={card.name} image={card.image} name={card.name} position={card.position} />
     );
 
     return (
       <div id="clergy-page">
         <h1>Служители</h1>
         <ul className="grid">
-          {clericCarts}
+          {clericCards}
         </ul>
       </div>
     )

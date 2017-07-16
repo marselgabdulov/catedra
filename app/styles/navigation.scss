@@ -1,4 +1,4 @@
-$red-color: #D0022B;
+$main-color: #D0022B;
 $link-color: #868986;
 $secondary-background: #f2f2f2;
 
@@ -46,7 +46,7 @@ $secondary-background: #f2f2f2;
   }
 
   a {
-    color: $red-color;
+    color: $main-color;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 450;
@@ -86,7 +86,7 @@ $secondary-background: #f2f2f2;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  background-color: $red-color;
+  background-color: $main-color;
   width: 12em;
   height: 60px;
   position: fixed;

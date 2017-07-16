@@ -9,7 +9,7 @@ class Rules extends React.Component {
         <section className="text-section">
           <img src={Mass} alt="christmation" alt="Mass"/>
           <h1>Правила поведения</h1>
-          <h2>Общие правила</h2>
+          <h2>Общие правила:</h2>
           <p className="text-wrapper">
             <ul>
               <li>Во всех помещениях собора мужчинам необходимо находиться без головных уборов, женщинам - в закрытой одежде, исключающей декольте, оголенные живот, колени и плечи.</li>

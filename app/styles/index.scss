@@ -9,8 +9,7 @@
 @import "./home.scss";
 @import "./clergy.scss";
 
-
-$red-color: #D0022B;
+$main-color: #D0022B;
 $link-color: #868986;
 $secondary-background: #f2f2f2;
 $footer-color: #fcfcfc;
@@ -41,7 +40,7 @@ h1 {
   font-size: 1.5em;
   line-height: 1.6em;
   white-space: nowrap;
-  color: $red-color;
+  color: $main-color;
 }
 
 h2 {
@@ -64,7 +63,7 @@ h2 {
   }
 
   a {
-    color: $red-color;
+    color: $main-color;
   }
 
   a:hover {
@@ -154,7 +153,7 @@ and (min-width : 1367px) {
       line-height: 1.5em;
 
       .page-header-message {
-        color: $red-color;
+        color: $main-color;
         padding-top: 2.5em;
         text-align: center;
         font-weight: bold;

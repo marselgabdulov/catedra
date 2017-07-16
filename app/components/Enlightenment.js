@@ -20,7 +20,7 @@ class Enlightenment extends React.Component {
             Приглашаем всех желающих.
           </p>
 
-          <div className="image-wrapper-right">
+          <div className="image-wrapper">
             <img className="img" src={Organ} alt="Organ"/>
             <span className="sign"><i>Haarlem cathedral organ by muller. 1738 г.</i></span>
           </div>
@@ -46,7 +46,7 @@ class Enlightenment extends React.Component {
             С вопросами и предложениями можно обращаться в офис фонда "Искусство добра" в Соборе. Из притвора - направо по лестнице на второй этаж.
             <br/>
             <br/>
-            <a href="https://artbene.ru/">Афиша концертов</a>
+            <b><a href="https://artbene.ru/">Афиша концертов</a></b>
           </p>
         </section>
 
@@ -65,7 +65,7 @@ class Enlightenment extends React.Component {
 
             Контакты: <br/>
             Мария Логинова <br/>
-            <br/>
+
             <a href="tel:+79296267880">+7(929)626-78-80</a><br/>
             <a href="mailto:">maria.loginova@mail.ru</a>
         </section>
@@ -81,7 +81,7 @@ class Enlightenment extends React.Component {
 
           Контакты: <br/>
           с. Наталия Кабишева <br/>
-          <br/>
+          
           <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
           <a href="mailto:">angelus@deboniarte.org</a>
         </section>

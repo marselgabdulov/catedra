@@ -1,9 +1,9 @@
-$red-color: #D0022B;
+$main-color: #D0022B;
 
 #schedule-page {
 
   h1, h2, h3, h4 {
-    color: $red-color;
+    color: $main-color;
     text-transform: uppercase;
   }
 
@@ -62,7 +62,7 @@ $red-color: #D0022B;
 
     h2 {
       font-size: 0.9em;
-      color: $red-color;
+      color: $main-color;
     }
 
     .schedule {
@@ -78,7 +78,7 @@ $red-color: #D0022B;
       }
 
       th h3, h4 {
-        color: $red-color;
+        color: $main-color;
         border-bottom: 1px solid;
       }
 
@@ -113,7 +113,7 @@ $red-color: #D0022B;
 
     .header-message h1 {
       font-size: 0.9em;
-      color: $red-color;
+      color: $main-color;
     }
   }
 }

@@ -27,6 +27,19 @@ class Contacts extends Component {
             <div className="left">
 
               <p>
+                <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
+
+                <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
+                <a href="mailto:catedra.moscow@gmail.com" target="_blank">catedra.moscow@gmail.com</a>
+                <br/>
+                <a href="https://www.facebook.com/catedra.ru">Группа в Facebook</a> <br/>
+                <a href="https://vk.com/catedra" target="_blank">Группа в VK</a><br/>
+                <a href="https://www.youtube.com/watch?v=7nbaiaLmwKE" target="_blank">Видео 'Как пройти к собору'</a>
+
+              </p>
+
+
+              <p>
                 <b>Экскурсии</b><br/>
                 Бесплатные экскурсии по кафедральному собору проводятся по предварительной записи по вторникам, средам и пятницам во время, свободное от богослужений. Организацию экскурсий осуществляет фонд <a href="http://deboniarte.org/">Искусство добра</a>.
               </p>
@@ -42,6 +55,10 @@ class Contacts extends Component {
                 <a href="mailto:angelus@deboniarte.org">angelus@deboniarte.org </a>
               </p>
 
+
+            </div>
+
+            <div className="right">
               <p>
                 <b>Журналистам</b><br/>
                 По вопросам съемок и интервью в соборе обращайтесь
@@ -49,21 +66,6 @@ class Contacts extends Component {
                 <a href="tel:+74957855434">+7(495)785-54-34</a> <br/>
                 <a href="mailto:info@cathmos.ru">info@cathmos.ru</a>
                 <br/>
-                <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
-
-                <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
-              </p>
-            </div>
-
-            <div className="right">
-
-              <p>
-
-                <a href="mailto:catedra.moscow@gmail.com" target="_blank">catedra.moscow@gmail.com</a>
-                <br/>
-                <a href="https://www.facebook.com/catedra.ru">Группа в Facebook</a> <br/>
-                <a href="https://vk.com/catedra" target="_blank">Группа в VK</a><br/>
-                <a href="https://www.youtube.com/watch?v=7nbaiaLmwKE" target="_blank">Видео 'Как пройти к собору'</a>
 
               </p>
 
@@ -74,7 +76,6 @@ class Contacts extends Component {
                 <span>Белорусская</span>.
               </p>
 
-              <br/>
               <h3>Реквизиты</h3>
 
               <p>РО – Приход Непорочного Зачатия Пресвятой Девы Марии Римско-Католической Церкви в г. Москве</p>

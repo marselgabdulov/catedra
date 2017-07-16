@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ClericCart(props) {
+export default function ClericCard(props) {
   return (
     <li className="cleric-cart">
       <img src={props.image} alt={props.name} className="square" />
