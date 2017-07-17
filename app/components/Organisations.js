@@ -95,7 +95,6 @@ class Organisations extends React.Component {
             <a href="http://english.clonline.org/" target="_blank">Англоязычный сайт движения</a>
         </section>
 
-
         <section className="text-section">
           <h2>Неокатехуменат</h2>
           <img className="vertical-img" src={Ikona} alt="Icona Maria Kiko"

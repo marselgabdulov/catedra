@@ -25,19 +25,15 @@ class Contacts extends Component {
 
           <div id="main-contact">
             <div className="left">
-
               <p>
                 <b>Ризница:</b> <a href="tel:+74992523911">+7(499)252-39-11</a><br/>
-
                 <b>Концерты:</b> <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
                 <a href="mailto:catedra.moscow@gmail.com" target="_blank">catedra.moscow@gmail.com</a>
                 <br/>
                 <a href="https://www.facebook.com/catedra.ru">Группа в Facebook</a> <br/>
                 <a href="https://vk.com/catedra" target="_blank">Группа в VK</a><br/>
                 <a href="https://www.youtube.com/watch?v=7nbaiaLmwKE" target="_blank">Видео 'Как пройти к собору'</a>
-
               </p>
-
 
               <p>
                 <b>Экскурсии</b><br/>
@@ -54,8 +50,6 @@ class Contacts extends Component {
                 <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
                 <a href="mailto:angelus@deboniarte.org">angelus@deboniarte.org </a>
               </p>
-
-
             </div>
 
             <div className="right">
@@ -66,10 +60,9 @@ class Contacts extends Component {
                 <a href="tel:+74957855434">+7(495)785-54-34</a> <br/>
                 <a href="mailto:info@cathmos.ru">info@cathmos.ru</a>
                 <br/>
-
               </p>
 
-              <p><b>Ближайшие станции метро:</b> <br/>
+              <p><b>Ближайшие станции метро:</b><br/>
                 <span>Баррикадная</span>,<br/>
                 <span>Улица 1905  года</span>,<br/>
                 <span>Краснопресненская</span>,<br/>
