@@ -13,7 +13,6 @@ class Ministrant extends React.Component {
         <h1>Министранты</h1>
         <br/>
         <div className="ordinary-page">
-
           <section className="text-section">
 
             <div className="image-wrapper">

@@ -34,7 +34,7 @@ class Parish extends React.Component {
 
         <p><NavLink exact activeClassName='active' to='/prayergroups'>МОЛИТВЕННЫЕ ГРУППЫ...</NavLink></p>
 
-        <p><NavLink exact activeClassName='active' to='/organisations'>ДВИЖЕНИЯ...</NavLink></p>
+        <p><NavLink exact activeClassName='active' to='/movements'>ДВИЖЕНИЯ...</NavLink></p>
 
         <h3>Дорогие братья и сестры! </h3>
         <p>

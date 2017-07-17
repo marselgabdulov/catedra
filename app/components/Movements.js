@@ -6,7 +6,7 @@ import Comunione_e_liberazione from '../images/comunione_e_liberazione.jpg'
 import Ikona from '../images/Icona_maria_kiko.jpg';
 import Bosco from '../images/donbosco.png';
 
-class Organisations extends React.Component {
+class Movements extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
@@ -132,4 +132,4 @@ class Organisations extends React.Component {
   }
 }
 
-export default Organisations;
+export default Movements;

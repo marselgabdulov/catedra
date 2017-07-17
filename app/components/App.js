@@ -11,7 +11,7 @@ import Ministrant from './Ministrant';
 import Catechesis from './Catechesis';
 import Congregations from './Congregations';
 import PrayerGroups from './PrayerGroups';
-import Organisations from './Organisations';
+import Movements from './Movements';
 import Rules from './Rules';
 import Enlightenment from './Enlightenment';
 import Clergy from './Clergy';
@@ -42,7 +42,7 @@ class App extends React.Component {
               <Route exact path='/catechesis' component={Catechesis} />
               <Route exact path='/congregations' component={Congregations} />
               <Route exact path='/prayergroups' component={PrayerGroups} />
-              <Route exact path='/organisations' component={Organisations} />
+              <Route exact path='/movements' component={Movements} />
               <Route exact path='/rules' component={Rules} />
               <Route exact path='/enlightenment' component={Enlightenment} />
               <Route exact path='/clergy' component={Clergy} />
