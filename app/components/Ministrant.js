@@ -1,5 +1,5 @@
 import React from 'react';
-import MinistrantImg from '../images/ministrant.jpg';
+import MinistrantImg from '../images/ministrant/ministrant.jpg';
 const NavLink = require('react-router-dom').NavLink;
 
 class Ministrant extends React.Component {

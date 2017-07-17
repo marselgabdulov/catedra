@@ -1,7 +1,7 @@
 import React from 'react';
-import LiveRosary from '../images/live_rosary.jpg';
-import Daisies from '../images/daisies.jpg';
-import Devider from '../images/Divider.png';
+import LiveRosary from '../images/prayer_groups/live_rosary.jpg';
+import Daisies from '../images/prayer_groups/daisies.jpg';
+import Devider from '../images/prayer_groups/Divider.png';
 const NavLink = require('react-router-dom').NavLink;
 
 class PrayerGroups extends React.Component {

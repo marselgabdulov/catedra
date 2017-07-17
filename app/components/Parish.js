@@ -1,6 +1,6 @@
 import React from 'react';
 const NavLink = require('react-router-dom').NavLink;
-import ParishImg from '../images/parish-1.jpg';
+import ParishImg from '../images/parish/parish-1.jpg';
 
 class Parish extends React.Component {
   componentDidMount() {

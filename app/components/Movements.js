@@ -2,9 +2,9 @@ import React from 'react';
 
 const NavLink = require('react-router-dom').NavLink;
 
-import Comunione_e_liberazione from '../images/comunione_e_liberazione.jpg'
-import Ikona from '../images/Icona_maria_kiko.jpg';
-import Bosco from '../images/donbosco.png';
+import Comunione_e_liberazione from '../images/movements/comunione_e_liberazione.jpg'
+import Ikona from '../images/movements/Icona_maria_kiko.jpg';
+import Bosco from '../images/movements/donbosco.png';
 
 class Movements extends React.Component {
   componentDidMount() {

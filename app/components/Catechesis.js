@@ -1,5 +1,5 @@
 import React from 'react';
-import CatechesisImg from '../images/catechesis.jpg';
+import CatechesisImg from '../images/catechesis/catechesis.jpg';
 
 const NavLink = require('react-router-dom').NavLink;
 

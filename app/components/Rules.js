@@ -1,5 +1,5 @@
 import React from 'react';
-import Mass from '../images/mass-2.jpg'
+import Mass from '../images/rules/mass-2.jpg'
 
 class Rules extends React.Component {
   render() {

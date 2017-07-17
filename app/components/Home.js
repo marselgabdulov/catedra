@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Sobor from '../images/sobor_draw.jpg';
+import Sobor from '../images/home/sobor_draw.jpg';
 const NavLink = require('react-router-dom').NavLink;
 
 class Home extends Component {

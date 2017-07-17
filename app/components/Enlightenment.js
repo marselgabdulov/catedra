@@ -1,7 +1,5 @@
 import React from 'react';
-import Organ from '../images/organ-2.jpg';
-import Education from '../images/education.png';
-
+import Organ from '../images/enlightenment/organ-2.jpg';
 
 class Enlightenment extends React.Component {
   componentDidMount() {
@@ -81,7 +79,7 @@ class Enlightenment extends React.Component {
 
           Контакты: <br/>
           с. Наталия Кабишева <br/>
-          
+
           <a href="tel:+74992524051">+7(499)252-40-51</a><br/>
           <a href="mailto:">angelus@deboniarte.org</a>
         </section>

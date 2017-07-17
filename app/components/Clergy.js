@@ -1,6 +1,6 @@
 import React from 'react';
-import Priest from '../images/priest-blank.jpg';
-import Nun from '../images/nun.jpg';
+import Priest from '../images/clergy/priest-blank.jpg';
+import Nun from '../images/clergy/nun.jpg';
 
 import ClericCard from './ClericCard';
 
