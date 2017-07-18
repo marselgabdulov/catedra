@@ -15,8 +15,6 @@ import Movements from './Movements';
 import Rules from './Rules';
 import Enlightenment from './Enlightenment';
 import Clergy from './Clergy';
-
-
 import Parish from './Parish';
 
 import Navigation from './Navigation/Navigation';
@@ -47,7 +45,11 @@ class App extends React.Component {
               <Route exact path='/enlightenment' component={Enlightenment} />
               <Route exact path='/clergy' component={Clergy} />
               <Route render={function () {
-                return <p>Not Found</p>
+                return (
+                  <div>
+                    <h1>СТРАНИЦА НЕ НАЙДЕНА!</h1>
+                  </div>
+                )
               } } />
           </Switch>
           </div>
