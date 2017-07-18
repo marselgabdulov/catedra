@@ -1,6 +1,4 @@
 .ordinary-page {
-  margin: 0 5em;
-  padding: 0 4em;
 
   p {
     text-align: justify;
@@ -110,18 +108,6 @@
 
 @media only screen and (max-width: 768px) {
   .ordinary-page {
-    margin: 0 0em;
-    padding: 0 0em;
-
-    h1 {
-      font-size: 0.85em;
-    }
-
-    h2 {
-      font-size: 1em;
-      color: $main-color;
-    }
-
     .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
       width: 100%;
     }

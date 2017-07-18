@@ -18,8 +18,8 @@ $footer-color: #fcfcfc;
 html, body {
   height: 100%;
   font-family: 'PT Serif', serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 button:hover {
@@ -38,7 +38,7 @@ h1 {
   // font-family: Tahoma, sans-serif;
   margin: 0;
   font-size: 1.5em;
-  line-height: 1.6em;
+  line-height: 1.2em;
   white-space: nowrap;
   color: $main-color;
 }
@@ -74,15 +74,44 @@ h2 {
 
 /*-----MEDIA------------*/
 
-@media only screen and (max-width : 414px) {
+@media only screen and (max-width : 320px) {
+  h1 {
+    font-size: 0.8em;
+  }
+  p, ul {
+    font-size: 0.8em;
+  }
+  .content {
+    padding: 3.5em 0.5em  0.5em 0.5em;
+  }
+}
+
+@media only screen
+and (min-width : 321px)
+and (max-width : 414px) {
+  h1 {
+    font-size: 1em;
+  }
   .content {
     padding: 3.5em 0.5em  0.5em 0.5em;
   }
 
 }
 
+@media only screen
+and (min-width : 550px)
+and (max-width : 768px) {
+
+  p {
+    font-size: 0.5em;
+    line-height: 1.4em;
+  }
+
+}
+
 /* Смартфоны (портретный режим) ----------- */
 @media only screen
+and (min-width : 760px)
 and (max-width : 768px) {
 
   h1 {
@@ -91,7 +120,8 @@ and (max-width : 768px) {
   }
 
   .content {
-    padding: 4em 0.5em  0.5em 0.5em;
+    background: pink;
+    padding-top: 4em;
 
     .text-section {
       margin-bottom: 1em;
@@ -101,19 +131,43 @@ and (max-width : 768px) {
 
 /* Планшеты (портретный и альбомный режимы) ----------- */
 @media only screen
-and (min-width : 768px)
+and (min-width : 750px)
 and (max-width : 1024px) {
 
   .content {
-    padding: 0em 4em  2em 2em;
-
-
     min-height: 80vh;
+    margin-top: 4em;
+
+    h1 {
+      font-size: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      color: $main-color;
+    }
+
+    font-size: 0.8em;
+
   }
 }
 
 @media only screen
-and (min-width : 1024px)
+and (min-width : 800px)
+and (max-width : 919px) {
+  font-size: 0.8em;
+  .content {
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen
+and (min-width : 960px)
 and (max-width : 1366px) {
 
   h1 {
@@ -125,7 +179,7 @@ and (max-width : 1366px) {
   }
 
   .content {
-    padding: 0em 5em  5em 5em;
+    padding-top: 0;
     min-height: 80vh;
   }
 }

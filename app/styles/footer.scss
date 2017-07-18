@@ -4,7 +4,7 @@ $footer-color: #fcfcfc;
 footer {
   position: relative;
   padding-right: 5em;
-  font-size: 0.9em;
+  font-size: 0.6em;
 
   a {
     color: $link-color;
@@ -44,7 +44,7 @@ footer {
 @media only screen and (max-width: 768px) {
 
   footer {
-    font-size: 1em;
+    font-size: 0.8em;
     flex-direction: column;
     padding: 0;
 
