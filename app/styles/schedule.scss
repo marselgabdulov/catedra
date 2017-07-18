@@ -55,7 +55,8 @@ $main-color: #D0022B;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen
+  and (max-width: 768px) {
   #schedule-page   {
     padding: 1em 0.5em;
     margin: 0;
@@ -107,19 +108,23 @@ $main-color: #D0022B;
       td strong {
         text-transform: uppercase;
       }
-
-
     }
 
     .header-message h1 {
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: $main-color;
     }
   }
 }
 
 @media only screen
-and (min-width : 1024px)
-and (max-width : 1366px) {
+and (min-width : 800px)
+and (max-width : 919px) {
+
+  #schedule-page   {
+    padding: 0em 0em;
+    margin: 0 4em;
+
+  }
 
 }

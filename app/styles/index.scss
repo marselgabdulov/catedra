@@ -75,9 +75,9 @@ h2 {
 
 /*-----MEDIA------------*/
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 321px) {
   h1 {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   h2 {
@@ -132,7 +132,6 @@ and (max-width : 768px) {
   }
 
   .content {
-    background: pink;
     padding-top: 4em;
 
     .text-section {
