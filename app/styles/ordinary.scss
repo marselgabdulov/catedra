@@ -1,5 +1,7 @@
 .ordinary-page {
 
+  margin: 0 7.5em;
+
   p {
     text-align: justify;
   }
@@ -10,8 +12,11 @@
     justify-content: flex-end;
   }
 
-  .text-section {
-    margin-bottom: 4em;
+  .image-header {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   .back-forvard-links {
@@ -25,9 +30,6 @@
     justify-content: center;
     align-items: center;
 
-    img {
-      width: 80%;
-    }
   }
 
   .image-wrapper {
@@ -87,14 +89,9 @@
     font-size: 0.7em;
   }
 
-  h2 {
-    text-align: center;
-  }
-
   .header-message {
     text-align: right;
   }
-
 
   .text-wrapper {
     text-align: justify;
@@ -106,10 +103,17 @@
   }
 }
 
+
 @media only screen and (max-width: 768px) {
   .ordinary-page {
+    margin: 0 0.5em;
     .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
       width: 100%;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
     }
 
     .page-devider {
@@ -117,5 +121,13 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media only screen
+  and (min-width : 800px)
+  and (max-width : 919px) {
+  .ordinary-page {
+    margin: 0 4em;
   }
 }

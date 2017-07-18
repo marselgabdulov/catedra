@@ -10,7 +10,9 @@ class Parish extends React.Component {
   render() {
     return (
       <div className="ordinary-page">
-        <img src={ParishImg} alt="Parish"/>
+        <div className="image-header">
+          <img src={ParishImg} alt="Parish"/>
+        </div>
         <h1>Приход</h1>
         <p>
           <NavLink exact activeClassName='active' to='/sacramentum'>ТАИНСТВА</NavLink> - семь таинств касаются всех этапов, всех важных моментов жизни христианина: они дают рождение и возрастание, исцеление и миссию христианской жизни в вере...

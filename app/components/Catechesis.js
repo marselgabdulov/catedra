@@ -11,8 +11,10 @@ class Catechesis extends React.Component {
   render() {
     return (
       <div className="ordinary-page">
+        <section className="text-section">
         <img className="img" src={CatechesisImg} alt="Catechesis"/>
         <span className="sign"><i>The Catechism Lesson by Jules-Alexis Meunier</i></span>
+        <br/>
         <h1>Катехизация и углубление веры</h1>
         <p>
           <b>Катехизация</b> (от греч. Κατήχησις — поучение, наставление) — изучение основ христианской веры и вероучения церкви человеком, как правило, готовящимся принять Крещение и стать членом Церкви. Словом катехизация также может обозначаться весь процесс изучения основ христианского вероучения.
@@ -90,6 +92,7 @@ class Catechesis extends React.Component {
              Министрант --
           </NavLink>
         </p>
+        </section>
       </div>
     )
   }
