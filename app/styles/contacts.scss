@@ -46,10 +46,6 @@
      flex-direction: row;
      justify-content: space-between;
 
-    //  a {
-    //    color: blue;
-    //  }
-
      .left {
        width: 46%;
        height: auto;
@@ -62,32 +58,62 @@
   }
 
   @media only screen
-  and (max-width : 768px) {
+    and (max-width : 768px) {
 
-    margin: 0 0 0 0;
-    width: 100%;
-
-    .card-background {
-      background-image:none;
-    }
-
-
-    .card {
-      font-size: 0.9em;
-      text-align: center;
+      margin: 0 0 0 0;
       width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
 
-  #main-contact {
-    width: 100%;
-    flex-direction: column;
+      .card-background {
+        background-image:none;
+      }
 
-    .left, .right {
+      .card {
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+    #main-contact {
       width: 100%;
+      flex-direction: column;
+
+      .left, .right {
+        width: 100%;
+      }
     }
   }
-}
+
+  @media only screen
+    and (min-width : 800px)
+    and (max-width : 919px) {
+
+      .card {
+        font-size: 1em;
+        width: 250px;
+        margin: 10% 10% 10% 25%;
+      }
+
+    .card-background {
+      background-image: url("../images/contacts/map-sm.png");
+    }
+  }
+
+  @media only screen
+    and (min-width : 920px)
+    and (max-width : 1024px) {
+
+      .card {
+        font-size: 1em;
+        width: 300px;
+        margin: 10% 10% 10% 25%;
+      }
+
+    .card-background {
+      background-image: url("../images/contacts/map-md.png");
+    }
+  }
+
 }
