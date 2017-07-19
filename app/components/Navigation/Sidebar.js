@@ -6,68 +6,61 @@ class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible : false
+      visible : false,
+      toggleSidebar : this.props.toggleSidebar
     }
-
-    this.closeSidebar = this.closeSidebar.bind(this);
-  }
-
-  closeSidebar() {
-    that.setState({
-      visible: false
-    })
   }
 
   render() {
     return (
       <div id='sidebar' >
-        <nav role='navigation' className={this.props.visible === true ? "active" : "hidden"} onClick={this.closeSidebar} >
+        <nav role='navigation' className={this.props.visible === true ? "active" : "hidden"} onClick={this.state.toggleSidebar} >
           <div className="menu-block">
             <ul>
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/contacts'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/contacts'>
                    Контакты
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/calendar'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/calendar'>
                   Календарь событий
                 </NavLink>
               </li>
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/schedule'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/schedule'>
                   Расписание богослужений
                 </NavLink>
               </li>
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/rules'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/rules'>
                   Правила поведения
                 </NavLink>
               </li>
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/parish'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/parish'>
                   Приход
                 </NavLink>
               </li>
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/clergy'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/clergy'>
                   Служители
                 </NavLink>
               </li>
 
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/enlightenment'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/enlightenment'>
                   Культура и образование
                 </NavLink>
               </li>
 
               <li>
-                <NavLink onClick={this.closeSidebar} exact activeClassName='active' to='/photogallery'>
+                <NavLink onClick={this.state.toggleSidebar} exact activeClassName='active' to='/photogallery'>
                   Галерея
                 </NavLink>
               </li>

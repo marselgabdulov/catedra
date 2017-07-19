@@ -11,13 +11,12 @@ class Navigation extends React.Component {
     this.state = {
       visible: false
     }
-    this.handler = this.handler.bind(this);
+    this.toggleSidebar = this.toggleSidebar.bind(this);
   }
 
-  handler() {
-    let visible = this.state.visible;
+  toggleSidebar() {
     this.setState({
-      visible: !visible
+      visible: !this.state.visible
     });
   }
 
@@ -25,10 +24,10 @@ class Navigation extends React.Component {
     return (
       <div>
         <div id='header'>
-          <MenuButton visible={this.state.visible} action={this.handler} id="menu-button" />
+          <MenuButton visible={this.state.visible} action={this.toggleSidebar} id="menu-button" />
           <Header />
         </div>
-        <Sidebar visible={this.state.visible} />
+        <Sidebar toggleSidebar={this.toggleSidebar} visible={this.state.visible} />
       </div>
 
     )
