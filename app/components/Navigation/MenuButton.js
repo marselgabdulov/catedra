@@ -3,14 +3,10 @@ import React from 'react';
 class MenuButton extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      status: 'hidden'
-    }
   }
 
   setIcon() {
-    if(this.props.status === 'active') {
+    if(this.props.visible === true) {
       return 'cancel'
     }
     return 'menu'

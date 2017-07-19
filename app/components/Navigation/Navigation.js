@@ -9,17 +9,15 @@ class Navigation extends React.Component {
     super(props);
 
     this.state = {
-      status: 'hidden'
+      visible: false
     }
-
     this.handler = this.handler.bind(this);
   }
 
   handler() {
-    let status = this.state.status === 'hidden' ? 'active' : 'hidden';
-    console.log('nav state:' + status);
+    let visible = this.state.visible;
     this.setState({
-      status: status
+      visible: !visible
     });
   }
 
@@ -27,10 +25,10 @@ class Navigation extends React.Component {
     return (
       <div>
         <div id='header'>
-          <MenuButton status={this.state.status} action={this.handler} id="menu-button" />
+          <MenuButton visible={this.state.visible} action={this.handler} id="menu-button" />
           <Header />
         </div>
-        <Sidebar status={this.state.status} />
+        <Sidebar visible={this.state.visible} />
       </div>
 
     )

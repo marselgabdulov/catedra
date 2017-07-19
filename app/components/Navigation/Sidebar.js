@@ -6,7 +6,7 @@ class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      status : 'hidden'
+      visible : false
     }
 
     this.closeSidebar = this.closeSidebar.bind(this);
@@ -14,14 +14,14 @@ class Sidebar extends React.Component {
 
   closeSidebar() {
     that.setState({
-      status: 'hidden'
+      visible: false
     })
   }
 
   render() {
     return (
       <div id='sidebar' >
-        <nav role='navigation' className={this.props.status} onClick={this.closeSidebar} >
+        <nav role='navigation' className={this.props.visible === true ? "active" : "hidden"} onClick={this.closeSidebar} >
           <div className="menu-block">
             <ul>
               <li>
