@@ -1,4 +1,5 @@
 import React from 'react';
+import onClickOutside from 'react-onclickoutside';
 
 import MenuButton from './MenuButton';
 import Header from './Header';
@@ -20,6 +21,11 @@ class Navigation extends React.Component {
     });
   }
 
+  handleClickOutside(e) {
+    e.preventDefault();
+    this.setState({ visible: false });
+  }
+
   render() {
     return (
       <div>
@@ -34,4 +40,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation;
+export default onClickOutside(Navigation);

@@ -27,6 +27,7 @@
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-image-gallery": "^0.8.3",
+    "react-onclickoutside": "^6.4.0",
     "react-photo-gallery": "^5.6.1",
     "react-scrollable-anchor": "^0.4.2",
     "react-youtube": "^7.4.0",
